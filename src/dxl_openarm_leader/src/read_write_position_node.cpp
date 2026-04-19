@@ -138,7 +138,6 @@ void ReadWriteNode::read_present_position()
   std_msgs::msg::Float64MultiArray openarm_msg;
   openarm_msg.data.resize(14, 0.0);
 
-
   for (size_t i = 0; i < dxl_ids.size(); ++i) {
     int32_t present_position = 0;
 
