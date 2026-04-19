@@ -1,0 +1,11 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kopenarm_command_publisher_[m[K’ was not declared in this scope
+  130 |     [01;31m[Kopenarm_command_publisher_[m[K->publish(openarm_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:[m[K In constructor ‘[01m[KReadWriteNode::ReadWriteNode()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:235:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kopenarm_command_publisher_[m[K’ was not declared in this scope
+  235 |   [01;31m[Kopenarm_command_publisher_[m[K =
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_position_node.dir/build.make:76: CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

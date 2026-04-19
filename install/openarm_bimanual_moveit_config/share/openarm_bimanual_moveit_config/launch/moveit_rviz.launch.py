@@ -1,0 +1,1 @@
+/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config/launch/moveit_rviz.launch.py

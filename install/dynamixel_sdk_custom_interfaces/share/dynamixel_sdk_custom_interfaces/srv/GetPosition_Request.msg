@@ -1,0 +1,1 @@
+/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Request.msg

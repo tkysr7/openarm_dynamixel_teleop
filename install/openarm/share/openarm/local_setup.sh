@@ -1,0 +1,1 @@
+/home/tky/workspace/openarm_ws/build/openarm/ament_cmake_environment_hooks/local_setup.sh

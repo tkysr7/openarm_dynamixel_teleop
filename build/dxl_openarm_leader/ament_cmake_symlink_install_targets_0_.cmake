@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/tky/workspace/openarm_ws/build/dxl_openarm_leader/read_write_position_node" "/home/tky/workspace/openarm_ws/build/dxl_openarm_leader/pub_position_node" "TARGETS" "read_write_position_node" "pub_position_node" "DESTINATION" "lib/dxl_openarm_leader")

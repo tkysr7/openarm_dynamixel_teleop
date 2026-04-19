@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target read_write_position_node[0m
+[ 50%] Built target pub_position_node
+[ 75%] [32mBuilding CXX object CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.o[0m
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:142:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_rad[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint1_rad[m[K’?
+  142 |       openarm_msg.data[i] = [01;31m[Kjoint_rad[m[K;
+      |                             [01;31m[K^~~~~~~~~[m[K
+      |                             [32m[Kjoint1_rad[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:138:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint1_rad[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  138 |       double [01;35m[Kjoint1_rad[m[K =
+      |              [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_position_node.dir/build.make:76: CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

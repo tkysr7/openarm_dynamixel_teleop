@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-705dfdf649a71fca1b04.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dxl_openarm_leader",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dxl_openarm_leader_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dxl_openarm_leader_uninstall-46b7f01b53ab7cf9f1de.json",
+					"name" : "dxl_openarm_leader_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_position_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_position_node-2f101b9387f00e1366a8.json",
+					"name" : "pub_position_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_position_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_position_node-8e3a66b77515ad8c6511.json",
+					"name" : "read_write_position_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-797c7f945dfa6dec3e99.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tky/workspace/openarm_ws/build/dxl_openarm_leader",
+		"source" : "/home/tky/workspace/openarm_ws/src/dxl_openarm_leader"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,4 @@
+source;share/openarm_bimanual_moveit_config/local_setup.bash
+source;share/openarm_bimanual_moveit_config/local_setup.dsv
+source;share/openarm_bimanual_moveit_config/local_setup.sh
+source;share/openarm_bimanual_moveit_config/local_setup.zsh

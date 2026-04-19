@@ -1,0 +1,1 @@
+/home/tky/workspace/openarm_ws/build/dxl_openarm_leader/ament_cmake_environment_hooks/local_setup.zsh

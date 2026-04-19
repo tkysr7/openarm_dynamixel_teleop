@@ -1,0 +1,4 @@
+source;share/openarm/local_setup.bash
+source;share/openarm/local_setup.dsv
+source;share/openarm/local_setup.sh
+source;share/openarm/local_setup.zsh

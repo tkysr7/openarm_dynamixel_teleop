@@ -1,0 +1,1 @@
+/home/tky/workspace/openarm_ws/src/openarm_description/launch/display_openarm.launch.py

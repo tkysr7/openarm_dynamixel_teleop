@@ -1,0 +1,10 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:138:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd_msgs[m[K’
+  138 |   [01;31m[Kstd_msgs[m[K::msg::Float64MultiArray openarm_msg;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_openarm_leader/src/read_write_position_node.cpp:139:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kopenarm_msg[m[K’ was not declared in this scope
+  139 |   [01;31m[Kopenarm_msg[m[K.data.resize(14, 0.0);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_position_node.dir/build.make:76: CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
