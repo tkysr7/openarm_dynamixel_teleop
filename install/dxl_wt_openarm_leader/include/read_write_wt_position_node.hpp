@@ -80,12 +80,14 @@ private:
 
 
 
-  static constexpr int READ_PERIOD_MS = 10;
-  static constexpr double READ_PERIOD_SEC = READ_PERIOD_MS / 1000.0;
+  int read_period_ms_ = 10;
+  double read_period_sec_ = read_period_ms_/1000.0;
 
   /* Servo physical value*/
-  static constexpr int CURRENT_LIMIT_mA = 150;
-  static constexpr double Kt = 0.354;  // Nm/A
+  int current_limit_mA_ = 150;
+  double kt_ = 0.354;  // Nm/A
+
+
   std::array<double, 18> J_{
     0.000022,0.000022,0.000022,0.000022,0.000022,0.000022,0.000032,0.000022,
     0.000022,0.000022,0.000022,0.000022,0.000022,0.000022,0.000022,0.000022,
@@ -114,7 +116,7 @@ private:
 
   //仮想ばね [Nm/rad]
   std::array<double, 18> Kp_{
-      0.000011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.000011, 0.011,
+      0.00004, 0.011, 0.011, 0.011, 0.011, 0.011, 0.000011, 0.011,
       0.011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.011,
       0.011, 0.011
   };

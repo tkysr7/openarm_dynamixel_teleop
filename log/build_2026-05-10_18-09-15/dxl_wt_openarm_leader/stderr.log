@@ -1,0 +1,10 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:52:[m[K [01;31m[Kerror: [m[K‘[01m[KKt[m[K’ was not declared in this scope
+  171 |     goal_current_mA =  static_cast<int>((tau_cmd / [01;31m[KKt[m[K) * 1000);
+      |                                                    [01;31m[K^~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:172:52:[m[K [01;31m[Kerror: [m[K‘[01m[KCURRENT_LIMIT_mA[m[K’ was not declared in this scope
+  172 |     goal_current_mA = std::clamp(goal_current_mA, -[01;31m[KCURRENT_LIMIT_mA[m[K, CURRENT_LIMIT_mA);
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

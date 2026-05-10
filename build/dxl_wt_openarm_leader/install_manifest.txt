@@ -2,6 +2,8 @@
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//pub_dynamixel_data_node.hpp
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//read_write_wt_position_node.hpp
+/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/config/params.yaml
+/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/launch/read_write_wt_position.launch.py
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/package_run_dependencies/dxl_wt_openarm_leader
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/parent_prefix_path/dxl_wt_openarm_leader
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.sh

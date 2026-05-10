@@ -1,0 +1,10 @@
+In file included from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:47[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/include/read_write_wt_position_node.hpp:84:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KReadWriteWTNode::READ_PERIOD_MS[m[K’
+   84 |   static constexpr double READ_PERIOD_SEC = [01;31m[KREAD_PERIOD_MS[m[K / 1000.0;
+      |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/include/read_write_wt_position_node.hpp:83:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 |   int [01;36m[KREAD_PERIOD_MS[m[K = 10;
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -150,7 +150,7 @@ void ReadWriteWTNode::motion_compensation()
 
     // Stribeck friction model
     double sign_v = 0.0;
-    if (std::abs(present_vel_rad_s_[dxl_id-1]) > 1e-3) {
+    if (std::abs(present_vel_rad_s_[dxl_id-1]) > 3e-2) {
       sign_v = (present_vel_rad_s_[dxl_id-1] > 0.0) ? 1.0 : -1.0;
     }
 
@@ -166,14 +166,14 @@ void ReadWriteWTNode::motion_compensation()
 
 
     //Compensation TORQUE
-    double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f +tau_imp;
+    // double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f +tau_imp; //Enable Impedance control
+    double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f; //disable Impedance control
+    goal_current_mA =  static_cast<int>((tau_cmd / kt_) * 1000);
+    goal_current_mA = std::clamp(goal_current_mA, -current_limit_mA_, current_limit_mA_);
 
-    goal_current_mA =  static_cast<int>((tau_cmd / Kt) * 1000);
-    goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
 
-
-    RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %d ",
-                 dxl_id, goal_current_mA, present_vel_rad_s_[dxl_id -1],tau_f, tau_imp,present_position_[dxl_id-1]);
+    RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %d dt: %d",
+                 dxl_id, goal_current_mA, present_vel_rad_s_[dxl_id -1],tau_f, tau_imp,present_position_[dxl_id-1], read_period_ms_);
 
     dxl_comm_result = packetHandler->write2ByteTxRx(
       portHandler,
@@ -299,7 +299,7 @@ void ReadWriteWTNode::read_present_position()
     } else{
       prev_vel_rad_s_[dxl_ids_[i]-1] = present_vel_rad_s_[dxl_ids_ [i]-1];
       present_vel_rad_s_[dxl_ids_[i]-1] = static_cast<double>(present_velocity_raw) * 0.229 * (2.0 * M_PI / 60.0);
-      present_acc_rad_ss_[dxl_ids_[i]-1] = (present_vel_rad_s_[dxl_ids_[i]-1] -prev_vel_rad_s_[dxl_ids_[i]-1]) /READ_PERIOD_SEC;
+      present_acc_rad_ss_[dxl_ids_[i]-1] = (present_vel_rad_s_[dxl_ids_[i]-1] -prev_vel_rad_s_[dxl_ids_[i]-1]) / read_period_sec_;
 
       // RCLCPP_INFO(
       //   this->get_logger(),
@@ -377,6 +377,46 @@ ReadWriteWTNode::ReadWriteWTNode()
   this->declare_parameter("qos_depth", 10);
   int8_t qos_depth = 0;
   this->get_parameter("qos_depth", qos_depth);
+  
+  this->declare_parameter<int>("read_period_ms", read_period_ms_);
+  this->get_parameter("read_period_ms", read_period_ms_);
+  read_period_sec_ = static_cast<double>(read_period_ms_) / 1000.0;
+ 
+  this->declare_parameter<int>("current_limit_ma", current_limit_mA_);
+  this->get_parameter("current_limit_ma", current_limit_mA_);
+  this->declare_parameter<double>("kt", kt_);
+  this->get_parameter("kt", kt_);
+
+  auto load_double_array_parameter =
+  [this](const std::string & name, std::array<double, 18> & target) {
+    std::vector<double> values(target.begin(), target.end());
+
+    this->declare_parameter<std::vector<double>>(name, values);
+    this->get_parameter(name, values);
+
+    if (values.size() != target.size()) {
+      RCLCPP_WARN(
+        this->get_logger(),
+        "Parameter '%s' size is %zu, expected %zu. Keeping default values.",
+        name.c_str(),
+        values.size(),
+        target.size()
+      );
+      return;
+    }
+    std::copy(values.begin(), values.end(), target.begin());
+  };
+
+  load_double_array_parameter("j", J_);
+  load_double_array_parameter("b", b_);
+  load_double_array_parameter("ts", Ts_);
+  load_double_array_parameter("tc", Tc_);
+  load_double_array_parameter("vs", vs_);
+
+  load_double_array_parameter("kp", Kp_);
+  load_double_array_parameter("kd", Kd_);
+  load_double_array_parameter("jd", Jd_);
+
 
   const auto QOS_RKL10V =
     rclcpp::QoS(rclcpp::KeepLast(qos_depth)).reliable().durability_volatile();
@@ -484,9 +524,9 @@ ReadWriteWTNode::ReadWriteWTNode()
       "/right_gripper_controller/gripper_cmd"
     );
 
-  // 追加: 500msごとにPresent Positionを読むtimer
+  //Present Positionを読むtimer
   timer_ = this->create_wall_timer(
-    std::chrono::milliseconds(READ_PERIOD_MS),
+    std::chrono::milliseconds(read_period_ms_),
     std::bind(&ReadWriteWTNode::read_present_position, this)
 );
 

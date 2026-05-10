@@ -1,0 +1,27 @@
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::motion_compensation()’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:52: error: ‘Kt’ was not declared in this scope
+  171 |     goal_current_mA =  static_cast<int>((tau_cmd / Kt) * 1000);
+      |                                                    ^~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:172:52: error: ‘CURRENT_LIMIT_mA’ was not declared in this scope
+  172 |     goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
+      |                                                    ^~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In constructor ‘ReadWriteWTNode::ReadWriteWTNode()’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:384:52: error: ‘CURRENT_LIMIT_mA’ was not declared in this scope
+  384 |   this->declare_parameter<int>("current_limit_ma", CURRENT_LIMIT_mA);
+      |                                                    ^~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:386:41: error: ‘Kt’ was not declared in this scope
+  386 |   this->declare_parameter<double>("kt", Kt);
+      |                                         ^~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp: In instantiation of ‘bool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = const int; std::string = std::__cxx11::basic_string<char>]’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:382:22:   required from here
+/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:15: error: assignment of read-only reference ‘parameter’
+  294 |     parameter = static_cast<ParameterT>(parameter_variant.get_value<ParameterT>());
+      |     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

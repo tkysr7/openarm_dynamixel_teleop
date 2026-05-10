@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:94 (file):
+  file INSTALL cannot find
+  "/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/launch": No such
+  file or directory.
+
+
