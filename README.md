@@ -1,5 +1,5 @@
 # openarm_dynamixel_teleop
-This repository contains code for controlling Open-Arm using Dynamixel.
+This repository contains code for controlling Open-Arm using Dynamixel as leader device.
 Note: forward position control is used, please launch Open-Arm using the command below.
 
 ```
