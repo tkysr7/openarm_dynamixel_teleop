@@ -69,7 +69,7 @@ private:
 
   // int present_position;
 
-  const std::vector<uint8_t> dxl_ids_ = {1, 7};
+  std::vector<uint8_t> dxl_ids_ = {1};
 
   std::array<int, 18> present_position_{};
   std::array<double, 18> present_vel_rad_s_{};

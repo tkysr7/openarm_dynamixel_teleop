@@ -347,9 +347,7 @@ void ReadWriteWTNode::read_present_position()
       //   present_current_mA_[dxl_ids_[i]-1]
       // );
     }
-
   }
-
 
   std_msgs::msg::Float64MultiArray left_msg;
     left_msg.data.assign(
@@ -386,6 +384,24 @@ ReadWriteWTNode::ReadWriteWTNode()
   this->get_parameter("current_limit_ma", current_limit_mA_);
   this->declare_parameter<double>("kt", kt_);
   this->get_parameter("kt", kt_);
+
+  std::vector<int64_t> dxl_ids_param(dxl_ids_.begin(), dxl_ids_.end());
+  this->declare_parameter<std::vector<int64_t>>("dxl_ids", dxl_ids_param);
+  this->get_parameter("dxl_ids", dxl_ids_param);
+
+  dxl_ids_.clear();
+  for (const auto id : dxl_ids_param) {
+    if (id < 0 || id > 252) {
+      RCLCPP_WARN(
+        this->get_logger(),
+        "Invalid dxl_id: %ld. Skipping.",
+        static_cast<long>(id)
+      );
+      continue;
+    }
+
+    dxl_ids_.push_back(static_cast<uint8_t>(id));
+  }
 
   auto load_double_array_parameter =
   [this](const std::string & name, std::array<double, 18> & target) {
