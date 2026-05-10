@@ -67,6 +67,7 @@ include CMakeFiles/dynamixel_sdk_custom_interfaces.dir/compiler_depend.make
 include CMakeFiles/dynamixel_sdk_custom_interfaces.dir/progress.make
 
 CMakeFiles/dynamixel_sdk_custom_interfaces: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+CMakeFiles/dynamixel_sdk_custom_interfaces: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg
 CMakeFiles/dynamixel_sdk_custom_interfaces: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
 CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetPosition_Request.msg
 CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetPosition_Response.msg

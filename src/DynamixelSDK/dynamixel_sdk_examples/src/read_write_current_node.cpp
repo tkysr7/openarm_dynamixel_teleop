@@ -35,12 +35,12 @@
 #include <string>
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
-#include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
+#include "dynamixel_sdk_custom_interfaces/msg/set_current.hpp"
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rcutils/cmdline_parser.h"
 
-#include "read_write_node.hpp"
+#include "read_write_current_node.hpp"
 
 /******************************************************************************/
 /* define                                                                     */
@@ -75,7 +75,7 @@
 #define PROTOCOL_VERSION 2.0  // Default Protocol version of DYNAMIXEL X series.
 
 /* Default setting */
-#define BAUDRATE 57600  // Default Baudrate of DYNAMIXEL X series
+#define BAUDRATE 1000000  // Default Baudrate of DYNAMIXEL X series
 #define DEVICE_NAME "/dev/ttyUSB0"  // [Linux]: "/dev/ttyUSB*", [Windows]: "COM*"
 
 dynamixel::PortHandler * portHandler;
@@ -91,7 +91,7 @@ int dxl_comm_result = COMM_TX_FAIL;
 ReadWriteNode::ReadWriteNode()
 : Node("read_write_node")
 {
-  RCLCPP_INFO(this->get_logger(), "Run read write node");
+  RCLCPP_INFO(this->get_logger(), "Run read write current node");
 
   this->declare_parameter("qos_depth", 10);
   int8_t qos_depth = 0;
@@ -101,16 +101,16 @@ ReadWriteNode::ReadWriteNode()
     rclcpp::QoS(rclcpp::KeepLast(qos_depth)).reliable().durability_volatile();
 
   set_position_subscriber_ =
-    this->create_subscription<SetPosition>(
-    "set_position",
+    this->create_subscription<SetCurrent>(
+    "set_current",
     QOS_RKL10V,
-    [this](const SetPosition::SharedPtr msg) -> void
+    [this](const SetCurrent::SharedPtr msg) -> void
     {
       uint8_t dxl_error = 0;
 
       // Position Value of X series is 4 byte data.
       // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-      uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
+      uint32_t goal_current = (unsigned int)msg->current;  // Convert int32 -> uint32
 
       // Write Goal Position (length : 4 bytes)
       // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
@@ -119,7 +119,7 @@ ReadWriteNode::ReadWriteNode()
         portHandler,
         (uint8_t) msg->id,
         ADDR_GOAL_CURRENT,
-        goal_position,
+        goal_current,
         &dxl_error
       );
 
@@ -128,7 +128,7 @@ ReadWriteNode::ReadWriteNode()
       } else if (dxl_error != 0) {
         RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getRxPacketError(dxl_error));
       } else {
-        RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal CURRENT: %d]", msg->id, msg->position);
+        RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal CURRENT: %d]", msg->id, msg->current);
       }
 
       // Position Value of X series is 4 byte data. For AX & MX(1.0) use 2 byte data(int16_t) for the Position Value.
@@ -171,6 +171,15 @@ ReadWriteNode::~ReadWriteNode()
 /******************************************************************************/
 void setupDynamixel(uint8_t dxl_id)
 {
+  // Disable Torque of DYNAMIXEL
+  dxl_comm_result = packetHandler->write1ByteTxRx(
+    portHandler,
+    dxl_id,
+    ADDR_TORQUE_ENABLE,
+    TORQUE_DISABLE,  /* Torque OFF */
+    &dxl_error
+  );
+
   /* Use Position Control Mode                */
   /* #define CURRENT_BASED_POSITION_CONTROL 5 */
   /* #define POSITION_CONTROL				        3 */

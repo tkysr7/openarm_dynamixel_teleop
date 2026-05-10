@@ -1,0 +1,25 @@
+[0.014s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.118s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.155s] [ 33%] Built target pub_current_node
+[0.155s] [ 50%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[0.155s] [ 83%] Built target pub_position_node
+[2.476s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.477s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.477s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.477s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.477s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:275:9: error: ‘present_vel_rad_s’ was not declared in this scope; did you mean ‘present_vel_rad_s_’?
+[2.477s]   275 |         present_vel_rad_s[i]
+[2.477s]       |         ^~~~~~~~~~~~~~~~~
+[5.160s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.160s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.160s] gmake: *** [Makefile:146: all] Error 2
+[5.162s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

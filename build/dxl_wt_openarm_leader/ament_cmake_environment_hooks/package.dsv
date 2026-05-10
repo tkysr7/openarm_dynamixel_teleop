@@ -1,0 +1,4 @@
+source;share/dxl_wt_openarm_leader/local_setup.bash
+source;share/dxl_wt_openarm_leader/local_setup.dsv
+source;share/dxl_wt_openarm_leader/local_setup.sh
+source;share/dxl_wt_openarm_leader/local_setup.zsh

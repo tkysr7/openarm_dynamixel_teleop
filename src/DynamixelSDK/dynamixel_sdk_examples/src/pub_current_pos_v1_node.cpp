@@ -21,20 +21,20 @@
 /******************************************************************************/
 /* Constructor                                                                */
 /******************************************************************************/
-JointPubNode::JointPubNode()
+JointPositionPubNode::JointPositionPubNode()
 : Node("pub_dynamixel_data_node")
 {
   publisher_ = create_publisher<SetPosition>("/set_current", 10);
   timer_ = create_wall_timer(
     std::chrono::milliseconds(500),
-    std::bind(&JointPubNode::publishData, this)
+    std::bind(&JointPositionPubNode::publishData, this)
   );
 }
 
 /******************************************************************************/
 /* Function                                                                   */
 /******************************************************************************/
-void JointPubNode::publishData()
+void JointPositionPubNode::publishData()
 {
   SetPosition msg;
   
@@ -50,7 +50,7 @@ void JointPubNode::publishData()
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<JointPubNode>();
+  auto node = std::make_shared<JointPositionPubNode>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;

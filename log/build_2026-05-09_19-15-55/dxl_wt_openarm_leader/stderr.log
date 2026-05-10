@@ -1,0 +1,36 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:180:7:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst std::vector<unsigned char>[m[K’ to ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’}
+  180 |       [01;31m[Kdxl_ids[m[K,
+      |       [01;31m[K^~~~~~~[m[K
+      |       [01;31m[K|[m[K
+      |       [01;31m[Kconst std::vector<unsigned char>[m[K
+In file included from [01m[K/home/tky/workspace/openarm_ws/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h:29[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h:26[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:42[m[K:
+[01m[K/home/tky/workspace/openarm_ws/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h:407:59:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvirtual int dynamixel::PacketHandler::read4ByteTxRx(dynamixel::PortHandler*, uint8_t, uint16_t, uint32_t*, uint8_t*)[m[K’
+  407 |   virtual int read4ByteTxRx   (PortHandler *port, [01;36m[Kuint8_t id[m[K, uint16_t address, uint32_t *data, uint8_t *error = 0) = 0;
+      |                                                   [01;36m[K~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:211:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  211 |             dxl_ids[[01;31m[Ki[m[K],
+      |                     [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:226:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  226 |             dxl_ids[[01;31m[Ki[m[K],
+      |                     [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:236:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  236 |         openarm_msg.data[[01;31m[Ki[m[K] = joint_rad;
+      |                          [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

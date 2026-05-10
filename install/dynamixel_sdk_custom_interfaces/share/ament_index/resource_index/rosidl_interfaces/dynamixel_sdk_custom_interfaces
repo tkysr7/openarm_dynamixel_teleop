@@ -1,1 +1,8 @@
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+msg/SetCurrent.idl
+msg/SetCurrent.msg
+msg/SetPosition.idl
+msg/SetPosition.msg
+srv/GetPosition.idl
+srv/GetPosition.srv
+srv/GetPosition_Request.msg
+srv/GetPosition_Response.msg

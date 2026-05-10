@@ -1,0 +1,13 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:147:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdxl_ids[m[K’ was not declared in this scope; did you mean ‘[01m[Kdxl_ids_[m[K’?
+  147 |   for (const auto dxl_id : [01;31m[Kdxl_ids[m[K) {
+      |                            [01;31m[K^~~~~~~[m[K
+      |                            [32m[Kdxl_ids_[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:181:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdxl_ids[m[K’ was not declared in this scope; did you mean ‘[01m[Kdxl_ids_[m[K’?
+  181 |   for (size_t i = 0; i < [01;31m[Kdxl_ids[m[K.size(); ++i) {
+      |                          [01;31m[K^~~~~~~[m[K
+      |                          [32m[Kdxl_ids_[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

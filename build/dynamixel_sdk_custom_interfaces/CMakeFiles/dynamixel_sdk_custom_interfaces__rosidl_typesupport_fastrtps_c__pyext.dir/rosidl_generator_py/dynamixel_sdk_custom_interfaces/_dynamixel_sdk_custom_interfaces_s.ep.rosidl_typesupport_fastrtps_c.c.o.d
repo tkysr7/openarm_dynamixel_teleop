@@ -205,6 +205,9 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h \
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h \
+ /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__type_support.h \
+ /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__struct.h \
+ /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__functions.h \
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h \
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h \
  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h

@@ -246,10 +246,17 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__type_support.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__struct.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__functions.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h
 
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__functions.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__struct.h:
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h:
 
@@ -274,6 +281,8 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type
 /usr/include/python3.10/cpython/sysmodule.h:
 
 /usr/include/python3.10/sysmodule.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_current__type_support.h:
 
 /usr/include/python3.10/compile.h:
 

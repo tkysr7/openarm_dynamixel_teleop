@@ -1,0 +1,25 @@
+[0.017s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[0.134s] [ 33%] Built target pub_position_node
+[0.137s] [ 66%] Built target pub_current_node
+[0.138s] [ 83%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[2.769s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.770s]                  from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[2.770s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[2.771s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:275:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpresent_vel_rad_s[m[K’ was not declared in this scope; did you mean ‘[01m[Kpresent_vel_rad_s_[m[K’?
+[2.771s]   275 |         [01;31m[Kpresent_vel_rad_s[m[K[i]
+[2.771s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.771s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.772s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.772s] gmake: *** [Makefile:146: all] Error 2
+[5.774s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

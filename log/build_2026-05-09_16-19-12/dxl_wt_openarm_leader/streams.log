@@ -1,0 +1,16 @@
+[0.016s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.130s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.138s] [ 33%] Built target pub_current_node
+[0.139s] [ 66%] Built target pub_position_node
+[0.157s] [ 83%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.401s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.401s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:269:44: error: ‘present_velocity’ was not declared in this scope
+[2.401s]   269 |       double vel_rad = static_cast<double>(present_velocity)*0.229*(2.0 * M_PI / 60.0);
+[2.401s]       |                                            ^~~~~~~~~~~~~~~~
+[2.401s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:269:14: warning: unused variable ‘vel_rad’ [-Wunused-variable]
+[2.401s]   269 |       double vel_rad = static_cast<double>(present_velocity)*0.229*(2.0 * M_PI / 60.0);
+[2.401s]       |              ^~~~~~~
+[5.181s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.181s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.181s] gmake: *** [Makefile:146: all] Error 2
+[5.183s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

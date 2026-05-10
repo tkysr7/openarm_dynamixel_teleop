@@ -1,0 +1,18 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:162:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  162 |     if (std::abs(present_vel_rad_s_[dxl_ids_ [[01;31m[Ki[m[K]-1]) > 1e-3) {
+      |                                               [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:166:73:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  166 |     const double velocity_ratio = std::abs(present_vel_rad_s_[dxl_ids_ [[01;31m[Ki[m[K]-1]) / vs;
+      |                                                                         [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktau_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Ktau_f[m[K’?
+  171 |     [01;31m[Ktau_cmd[m[K = J * acc + tau_f
+      |     [01;31m[K^~~~~~~[m[K
+      |     [32m[Ktau_f[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope; did you mean ‘[01m[Kacct[m[K’?
+  171 |     tau_cmd = J * [01;31m[Kacc[m[K + tau_f
+      |                   [01;31m[K^~~[m[K
+      |                   [32m[Kacct[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

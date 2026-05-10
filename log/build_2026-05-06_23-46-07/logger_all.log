@@ -1,0 +1,720 @@
+[0.192s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.192s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b02daf3b550>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b02db0a8550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b02db0a8550>>, mixin_verb=('build',))
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.508s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tky/workspace/openarm_ws'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ros'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['cmake', 'python']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'cmake'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['python_setup_py']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python_setup_py'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ros'
+[0.535s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.549s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ros']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ros'
+[0.551s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_examples' with type 'ros.ament_cmake' and name 'dynamixel_sdk_examples'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extension 'ignore_ament_install'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extensions ['colcon_pkg']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extension 'colcon_pkg'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extensions ['colcon_meta']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extension 'colcon_meta'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_openarm_leader) by extension 'ros'
+[0.554s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dxl_openarm_leader' with type 'ros.ament_cmake' and name 'dxl_openarm_leader'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extension 'ignore'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extension 'ignore_ament_install'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extensions ['colcon_pkg']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extension 'colcon_meta'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extensions ['ros']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dxl_wt_openarm_leader) by extension 'ros'
+[0.557s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dxl_wt_openarm_leader' with type 'ros.ament_cmake' and name 'dxl_wt_openarm_leader'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_pkg'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ros']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ros'
+[0.559s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_description' with type 'ros.ament_cmake' and name 'openarm_description'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'ignore'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'ignore_ament_install'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'ros'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['cmake', 'python']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'cmake'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'python'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extensions ['python_setup_py']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2) by extension 'python_setup_py'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'colcon_meta'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['ros']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/dev) by extension 'python_setup_py'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extensions ['ignore', 'ignore_ament_install']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extension 'ignore'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extension 'ignore_ament_install'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extensions ['colcon_pkg']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extension 'colcon_pkg'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extensions ['colcon_meta']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extension 'colcon_meta'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm) by extension 'ros'
+[0.562s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_ros2/openarm' with type 'ros.ament_cmake' and name 'openarm'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extension 'ignore'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extension 'ignore_ament_install'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extensions ['colcon_pkg']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extension 'colcon_pkg'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extensions ['colcon_meta']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extension 'colcon_meta'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extensions ['ros']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bimanual_moveit_config) by extension 'ros'
+[0.565s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_ros2/openarm_bimanual_moveit_config' with type 'ros.ament_cmake' and name 'openarm_bimanual_moveit_config'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extensions ['colcon_meta']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extension 'colcon_meta'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extensions ['ros']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_ros2/openarm_bringup) by extension 'ros'
+[0.566s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_ros2/openarm_bringup' with type 'ros.ament_cmake' and name 'openarm_bringup'
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.604s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 427 installed packages in /opt/ros/humble
+[0.609s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.707s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.707s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.708s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.708s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_args' from command line to 'None'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target' from command line to 'None'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.709s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.709s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/openarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/openarm_bringup', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_args' from command line to 'None'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_target' from command line to 'None'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.710s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.710s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/openarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/openarm_description', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/openarm_description', 'symlink_install': False, 'test_result_base': None}
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_args' from command line to 'None'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_target' from command line to 'None'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_clean_cache' from command line to 'False'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_clean_first' from command line to 'False'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'cmake_force_configure' from command line to 'False'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'ament_cmake_args' from command line to 'None'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'catkin_cmake_args' from command line to 'None'
+[0.711s] Level 5:colcon.colcon_core.verb:set package 'dxl_openarm_leader' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.711s] DEBUG:colcon.colcon_core.verb:Building package 'dxl_openarm_leader' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/dxl_openarm_leader', 'symlink_install': False, 'test_result_base': None}
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_args' from command line to 'None'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_target' from command line to 'None'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_clean_cache' from command line to 'False'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_clean_first' from command line to 'False'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'cmake_force_configure' from command line to 'False'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'ament_cmake_args' from command line to 'None'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'catkin_cmake_args' from command line to 'None'
+[0.712s] Level 5:colcon.colcon_core.verb:set package 'dxl_wt_openarm_leader' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.712s] DEBUG:colcon.colcon_core.verb:Building package 'dxl_wt_openarm_leader' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader', 'symlink_install': False, 'test_result_base': None}
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_args' from command line to 'None'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target' from command line to 'None'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.713s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.713s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples', 'symlink_install': False, 'test_result_base': None}
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_args' from command line to 'None'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target' from command line to 'None'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_first' from command line to 'False'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_force_configure' from command line to 'False'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'ament_cmake_args' from command line to 'None'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.714s] DEBUG:colcon.colcon_core.verb:Building package 'openarm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/openarm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/openarm', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm', 'symlink_install': False, 'test_result_base': None}
+[0.714s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.715s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bimanual_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config', 'merge_install': False, 'path': '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.715s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.716s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.717s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk' with build type 'ament_cmake'
+[0.717s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk'
+[0.720s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.720s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.720s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.725s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with build type 'ament_cmake'
+[0.726s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces'
+[0.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.731s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/openarm_description' with build type 'ament_cmake'
+[0.731s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/openarm_description'
+[0.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.732s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.737s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bringup' with build type 'ament_cmake'
+[0.737s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bringup'
+[0.737s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.737s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk
+[0.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_description': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_description -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_description
+[0.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bringup -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_bringup
+[2.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk
+[2.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk -- -j12 -l12
+[2.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_description -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_description
+[2.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_description': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_description -- -j12 -l12
+[2.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bringup -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_bringup
+[2.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bringup -- -j12 -l12
+[2.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bringup -- -j12 -l12
+[2.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bringup
+[2.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_description -- -j12 -l12
+[2.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_description': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_description
+[2.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[2.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bringup
+[2.697s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup' for CMake module files
+[2.697s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup' for CMake config files
+[2.698s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[2.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[2.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[2.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/bin'
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/lib/python3.10/site-packages'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/bin'
+[2.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[2.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[2.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.sh'
+[2.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[2.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[2.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup' for CMake module files
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup' for CMake config files
+[2.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[2.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[2.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[2.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/bin'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/lib/python3.10/site-packages'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bringup/bin'
+[2.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[2.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[2.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.sh'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.bash'
+[2.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[2.733s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[2.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_description)
+[2.969s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description' for CMake module files
+[2.969s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description' for CMake config files
+[2.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_description', 'cmake_prefix_path')
+[2.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.ps1'
+[2.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.dsv'
+[2.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.sh'
+[2.975s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/bin'
+[2.975s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/lib/pkgconfig/openarm_description.pc'
+[2.975s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/lib/python3.10/site-packages'
+[2.976s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/bin'
+[2.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.ps1'
+[2.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.dsv'
+[2.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.sh'
+[2.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.bash'
+[2.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_description
+[2.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.zsh'
+[2.984s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_description/share/colcon-core/packages/openarm_description)
+[2.985s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_description)
+[2.986s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description' for CMake module files
+[2.986s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description' for CMake config files
+[2.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_description', 'cmake_prefix_path')
+[2.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.ps1'
+[2.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.dsv'
+[2.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.sh'
+[2.991s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/bin'
+[2.991s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/lib/pkgconfig/openarm_description.pc'
+[2.992s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/lib/python3.10/site-packages'
+[2.992s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_description/bin'
+[2.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.ps1'
+[2.994s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.dsv'
+[2.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.sh'
+[2.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.bash'
+[2.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_description/share/openarm_description/package.zsh'
+[2.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_description/share/colcon-core/packages/openarm_description)
+[2.997s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm' with build type 'ament_cmake'
+[2.997s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm'
+[2.997s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.997s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.005s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config' with build type 'ament_cmake'
+[3.006s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config'
+[3.006s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.006s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm
+[3.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config
+[3.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk -- -j12 -l12
+[3.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk
+[3.664s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[3.664s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk' for CMake module files
+[3.665s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk' for CMake config files
+[3.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[3.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[3.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[3.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[3.668s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib'
+[3.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[3.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk
+[3.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[3.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[3.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/bin'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/python3.10/site-packages'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/bin'
+[3.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[3.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[3.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[3.677s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[3.678s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk' for CMake module files
+[3.678s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk' for CMake config files
+[3.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[3.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[3.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[3.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib'
+[3.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[3.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[3.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[3.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[3.684s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/bin'
+[3.684s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[3.685s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/python3.10/site-packages'
+[3.685s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/bin'
+[3.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[3.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[3.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[3.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[4.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm_bimanual_moveit_config -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config
+[4.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config -- -j12 -l12
+[4.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm
+[4.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm -- -j12 -l12
+[4.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces
+[4.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces -- -j12 -l12
+[4.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config -- -j12 -l12
+[4.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config
+[4.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm -- -j12 -l12
+[4.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm
+[4.690s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm)
+[4.690s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm' for CMake module files
+[4.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm
+[4.696s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm' for CMake config files
+[4.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm', 'cmake_prefix_path')
+[4.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.ps1'
+[4.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.dsv'
+[4.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.sh'
+[4.698s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/bin'
+[4.698s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/lib/pkgconfig/openarm.pc'
+[4.698s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/lib/python3.10/site-packages'
+[4.699s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/bin'
+[4.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.ps1'
+[4.704s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.dsv'
+[4.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.sh'
+[4.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.bash'
+[4.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.zsh'
+[4.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm/share/colcon-core/packages/openarm)
+[4.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm)
+[4.710s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm' for CMake module files
+[4.711s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm' for CMake config files
+[4.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm', 'cmake_prefix_path')
+[4.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.ps1'
+[4.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.dsv'
+[4.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/hook/cmake_prefix_path.sh'
+[4.715s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/bin'
+[4.715s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/lib/pkgconfig/openarm.pc'
+[4.715s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/lib/python3.10/site-packages'
+[4.716s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm/bin'
+[4.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.ps1'
+[4.717s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.dsv'
+[4.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.sh'
+[4.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.bash'
+[4.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.zsh'
+[4.721s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm/share/colcon-core/packages/openarm)
+[4.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[4.723s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config' for CMake module files
+[4.723s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config' for CMake config files
+[4.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[4.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[4.726s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/bin'
+[4.726s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[4.727s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[4.727s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/bin'
+[4.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[4.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[4.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bimanual_moveit_config
+[4.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[4.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[4.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[4.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[4.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[4.733s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config' for CMake module files
+[4.734s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config' for CMake config files
+[4.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[4.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[4.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[4.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[4.737s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/bin'
+[4.737s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[4.738s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[4.738s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/bin'
+[4.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[4.739s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[4.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[4.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[4.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[4.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[9.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces -- -j12 -l12
+[9.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces
+[9.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[9.450s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[9.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces
+[9.451s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[9.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[9.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[9.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[9.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[9.454s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib'
+[9.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[9.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[9.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[9.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.10/site-packages'
+[9.456s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[9.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[9.456s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[9.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[9.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[9.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[9.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[9.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[9.460s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[9.461s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[9.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[9.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[9.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[9.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[9.463s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib'
+[9.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[9.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[9.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[9.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[9.465s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[9.465s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[9.465s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.10/site-packages'
+[9.465s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[9.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[9.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[9.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[9.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[9.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[9.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[9.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/dxl_openarm_leader' with build type 'ament_cmake'
+[9.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/dxl_openarm_leader'
+[9.470s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.470s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.475s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader' with build type 'ament_cmake'
+[9.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader'
+[9.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.481s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples' with build type 'ament_cmake'
+[9.481s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples'
+[9.481s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.481s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/dxl_openarm_leader -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dxl_openarm_leader
+[9.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader
+[9.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples
+[11.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples
+[11.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[11.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/dxl_openarm_leader -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dxl_openarm_leader
+[11.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_openarm_leader -- -j12 -l12
+[11.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader
+[11.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[32.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[32.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples
+[32.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[32.282s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples' for CMake module files
+[32.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples
+[32.283s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples' for CMake config files
+[32.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[32.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[32.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[32.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[32.285s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib'
+[32.285s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/bin'
+[32.285s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[32.286s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/python3.10/site-packages'
+[32.286s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/bin'
+[32.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[32.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[32.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[32.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[32.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[32.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[32.291s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[32.291s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples' for CMake module files
+[32.292s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples' for CMake config files
+[32.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[32.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[32.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[32.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[32.295s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib'
+[32.295s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/bin'
+[32.295s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[32.295s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/python3.10/site-packages'
+[32.296s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/bin'
+[32.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[32.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[32.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[32.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[32.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[32.300s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[34.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[34.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader
+[34.350s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dxl_wt_openarm_leader)
+[34.350s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader' for CMake module files
+[34.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader
+[34.352s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader' for CMake config files
+[34.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('dxl_wt_openarm_leader', 'cmake_prefix_path')
+[34.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.ps1'
+[34.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.dsv'
+[34.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.sh'
+[34.355s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib'
+[34.355s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/bin'
+[34.355s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/pkgconfig/dxl_wt_openarm_leader.pc'
+[34.356s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/python3.10/site-packages'
+[34.356s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/bin'
+[34.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.ps1'
+[34.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.dsv'
+[34.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.sh'
+[34.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.bash'
+[34.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.zsh'
+[34.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/colcon-core/packages/dxl_wt_openarm_leader)
+[34.361s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dxl_wt_openarm_leader)
+[34.361s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader' for CMake module files
+[34.362s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader' for CMake config files
+[34.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('dxl_wt_openarm_leader', 'cmake_prefix_path')
+[34.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.ps1'
+[34.364s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.dsv'
+[34.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/hook/cmake_prefix_path.sh'
+[34.365s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib'
+[34.365s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/bin'
+[34.365s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/pkgconfig/dxl_wt_openarm_leader.pc'
+[34.365s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/python3.10/site-packages'
+[34.366s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/bin'
+[34.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.ps1'
+[34.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.dsv'
+[34.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.sh'
+[34.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.bash'
+[34.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.zsh'
+[34.370s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/colcon-core/packages/dxl_wt_openarm_leader)
+[34.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_openarm_leader -- -j12 -l12
+[34.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_openarm_leader
+[34.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dxl_openarm_leader)
+[34.523s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader' for CMake module files
+[34.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_openarm_leader' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_openarm_leader
+[34.525s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader' for CMake config files
+[34.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('dxl_openarm_leader', 'cmake_prefix_path')
+[34.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.ps1'
+[34.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.dsv'
+[34.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.sh'
+[34.527s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib'
+[34.527s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/bin'
+[34.527s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib/pkgconfig/dxl_openarm_leader.pc'
+[34.528s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib/python3.10/site-packages'
+[34.528s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/bin'
+[34.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.ps1'
+[34.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.dsv'
+[34.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.sh'
+[34.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.bash'
+[34.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.zsh'
+[34.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/colcon-core/packages/dxl_openarm_leader)
+[34.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dxl_openarm_leader)
+[34.532s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader' for CMake module files
+[34.533s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader' for CMake config files
+[34.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('dxl_openarm_leader', 'cmake_prefix_path')
+[34.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.ps1'
+[34.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.dsv'
+[34.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/hook/cmake_prefix_path.sh'
+[34.535s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib'
+[34.535s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/bin'
+[34.535s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib/pkgconfig/dxl_openarm_leader.pc'
+[34.536s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/lib/python3.10/site-packages'
+[34.536s] Level 1:colcon.colcon_core.environment:checking '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/bin'
+[34.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.ps1'
+[34.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.dsv'
+[34.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.sh'
+[34.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.bash'
+[34.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/dxl_openarm_leader/package.zsh'
+[34.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tky/workspace/openarm_ws/install/dxl_openarm_leader/share/colcon-core/packages/dxl_openarm_leader)
+[34.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.540s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[34.546s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[34.547s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[34.547s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[34.564s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[34.564s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tky/workspace/openarm_ws/install/local_setup.ps1'
+[34.566s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tky/workspace/openarm_ws/install/_local_setup_util_ps1.py'
+[34.568s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tky/workspace/openarm_ws/install/setup.ps1'
+[34.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tky/workspace/openarm_ws/install/local_setup.sh'
+[34.570s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tky/workspace/openarm_ws/install/_local_setup_util_sh.py'
+[34.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tky/workspace/openarm_ws/install/setup.sh'
+[34.572s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tky/workspace/openarm_ws/install/local_setup.bash'
+[34.573s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tky/workspace/openarm_ws/install/setup.bash'
+[34.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tky/workspace/openarm_ws/install/local_setup.zsh'
+[34.575s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tky/workspace/openarm_ws/install/setup.zsh'

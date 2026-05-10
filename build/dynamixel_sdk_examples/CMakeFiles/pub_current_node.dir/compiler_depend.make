@@ -685,24 +685,32 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
   /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/include/pub_dynamixel_data_node.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/get_position.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp \
-  /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_current.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__struct.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__builder.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__traits.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__type_support.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp \
+  /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp
 
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp:
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/get_position.hpp:
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__traits.hpp:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__builder.hpp:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_current.hpp:
 
 /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/include/pub_dynamixel_data_node.hpp:
 
@@ -725,8 +733,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
-
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
 
@@ -820,11 +826,11 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
@@ -1024,8 +1030,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
@@ -1176,8 +1180,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /usr/include/locale.h:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
 /usr/include/c++/11/bits/basic_string.tcc:
@@ -1220,6 +1222,8 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -1229,6 +1233,8 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_current__struct.hpp:
 
 /usr/include/c++/11/ctime:
 
@@ -1301,6 +1307,8 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 /usr/include/features-time64.h:
 
 /usr/include/c++/11/debug/debug.h:
+
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1584,8 +1592,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /usr/include/c++/11/streambuf:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp:
-
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
@@ -1810,8 +1816,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
 /usr/include/c++/11/clocale:
@@ -2014,8 +2018,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
@@ -2071,8 +2073,6 @@ CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o: /home/tky/workspace/
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
 

@@ -1,0 +1,39 @@
+[0.028s] Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm
+[0.228s] -- The C compiler identification is GNU 11.4.0
+[0.334s] -- The CXX compiler identification is GNU 11.4.0
+[0.345s] -- Detecting C compiler ABI info
+[0.481s] -- Detecting C compiler ABI info - done
+[0.498s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.499s] -- Detecting C compile features
+[0.499s] -- Detecting C compile features - done
+[0.504s] -- Detecting CXX compiler ABI info
+[0.632s] -- Detecting CXX compiler ABI info - done
+[0.647s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.648s] -- Detecting CXX compile features
+[0.648s] -- Detecting CXX compile features - done
+[0.653s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.099s] -- Found Python3: /home/tky/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.450s] -- Configuring done
+[1.463s] -- Generating done
+[1.466s] -- Build files have been written to: /home/tky/workspace/openarm_ws/build/openarm
+[1.472s] Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake /home/tky/workspace/openarm_ws/src/openarm_ros2/openarm -DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/openarm
+[1.474s] Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm -- -j12 -l12
+[1.594s] Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm -- -j12 -l12
+[1.598s] Invoking command in '/home/tky/workspace/openarm_ws/build/openarm': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm
+[1.674s] -- Install configuration: ""
+[1.675s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/ament_index/resource_index/package_run_dependencies/openarm
+[1.676s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/ament_index/resource_index/parent_prefix_path/openarm
+[1.677s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/environment/ament_prefix_path.sh
+[1.677s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/environment/ament_prefix_path.dsv
+[1.678s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/environment/path.sh
+[1.680s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/environment/path.dsv
+[1.680s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/local_setup.bash
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/local_setup.sh
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/local_setup.zsh
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/local_setup.dsv
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.dsv
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/ament_index/resource_index/packages/openarm
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/cmake/openarmConfig.cmake
+[1.683s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/cmake/openarmConfig-version.cmake
+[1.691s] -- Installing: /home/tky/workspace/openarm_ws/install/openarm/share/openarm/package.xml
+[1.692s] Invoked command in '/home/tky/workspace/openarm_ws/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm

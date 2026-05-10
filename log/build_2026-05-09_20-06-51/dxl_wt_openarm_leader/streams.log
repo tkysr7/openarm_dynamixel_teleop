@@ -1,0 +1,19 @@
+[0.020s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.134s] [35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[0.159s] [ 33%] Built target pub_current_node
+[0.161s] [ 66%] Built target pub_position_node
+[0.169s] [ 83%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[2.766s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[2.766s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:147:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdxl_ids[m[K’ was not declared in this scope; did you mean ‘[01m[Kdxl_ids_[m[K’?
+[2.766s]   147 |   for (const auto dxl_id : [01;31m[Kdxl_ids[m[K) {
+[2.766s]       |                            [01;31m[K^~~~~~~[m[K
+[2.766s]       |                            [32m[Kdxl_ids_[m[K
+[2.770s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[2.770s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:181:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdxl_ids[m[K’ was not declared in this scope; did you mean ‘[01m[Kdxl_ids_[m[K’?
+[2.771s]   181 |   for (size_t i = 0; i < [01;31m[Kdxl_ids[m[K.size(); ++i) {
+[2.771s]       |                          [01;31m[K^~~~~~~[m[K
+[2.771s]       |                          [32m[Kdxl_ids_[m[K
+[5.763s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.763s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.764s] gmake: *** [Makefile:146: all] Error 2
+[5.766s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

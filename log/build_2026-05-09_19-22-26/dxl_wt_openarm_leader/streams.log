@@ -1,0 +1,14 @@
+[0.013s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.109s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.115s] [ 33%] Built target pub_position_node
+[0.122s] [ 66%] Built target pub_current_node
+[0.133s] [ 83%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.420s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::motion_compensation()’:
+[2.421s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:149:5: error: ‘print’ was not declared in this scope; did you mean ‘rint’?
+[2.421s]   149 |     print(present_vel_rad_s_);
+[2.421s]       |     ^~~~~
+[2.421s]       |     rint
+[5.072s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.072s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.072s] gmake: *** [Makefile:146: all] Error 2
+[5.074s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

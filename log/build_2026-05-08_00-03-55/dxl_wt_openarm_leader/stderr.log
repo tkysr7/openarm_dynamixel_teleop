@@ -1,0 +1,143 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:23:1:[m[K [01;31m[Kerror: [m[K‘[01m[KJointPubNode[m[K’ does not name a type
+   23 | [01;31m[KJointPubNode[m[K::JointPubNode()
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:36:6:[m[K [01;31m[Kerror: [m[K‘[01m[KJointPubNode[m[K’ has not been declared
+   36 | void [01;31m[KJointPubNode[m[K::publishData()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:[m[K In function ‘[01m[Kvoid publishData()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:38:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSetCurrent[m[K’ was not declared in this scope
+   38 |   [01;31m[KSetCurrent[m[K msg;
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:40:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   40 |   [01;31m[Kmsg[m[K.current = currents_0_[current_position_index_];
+      |   [01;31m[K^~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:40:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:40:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrents_0_[m[K’ was not declared in this scope
+   40 |   msg.current = [01;31m[Kcurrents_0_[m[K[current_position_index_];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:40:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_position_index_[m[K’ was not declared in this scope
+   40 |   msg.current = currents_0_[[01;31m[Kcurrent_position_index_[m[K];
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   43 |   RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Publishing ID: %d Current: %d", msg.id, msg.current);
+      |               [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:43:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Publishing ID: %d Current: %d", msg.id, msg.current);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:43:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Publishing ID: %d Current: %d", msg.id, msg.current);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:43:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Publishing ID: %d Current: %d", msg.id, msg.current);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:45:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+   45 |   [01;31m[Kpublisher_[m[K->publish(msg);
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:52:32:[m[K [01;31m[Kerror: [m[K‘[01m[KJointPubNode[m[K’ was not declared in this scope
+   52 |   auto node = std::make_shared<[01;31m[KJointPubNode[m[K>();
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:52:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   52 |   auto node = [01;31m[Kstd::make_shared<JointPubNode>()[m[K;
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:18[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp:52:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   52 |   auto node = [01;31m[Kstd::make_shared<JointPubNode>()[m[K;
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/pub_current_node.dir/build.make:76: CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pub_current_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

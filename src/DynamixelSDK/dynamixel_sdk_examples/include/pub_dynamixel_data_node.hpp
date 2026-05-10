@@ -15,37 +15,56 @@
 #ifndef JOINT_PUB_NODE_HPP_
 #define JOINT_PUB_NODE_HPP_
 
-/******************************************************************************/
-/* include                                                                    */
-/******************************************************************************/
-#include <rclcpp/rclcpp.hpp>
+#include <vector>
+
+#include "dynamixel_sdk_custom_interfaces/msg/set_current.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
-#include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
+#include "rclcpp/rclcpp.hpp"
 
-
-class JointPubNode : public rclcpp::Node
+class JointPositionPubNode : public rclcpp::Node
 {
 public:
   using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
 
-  JointPubNode();
+  JointPositionPubNode();
 
 private:
   void publishData();
   rclcpp::Publisher<SetPosition>::SharedPtr publisher_;
   rclcpp::TimerBase::SharedPtr timer_;
-  std::vector<int> currents_0_ = {0, -38, -38, -38, -38, -38, -38, -38,\
-                                    -38, -38, -38, -38, -38, -38, -38, 0, \
-                                    0, 38, 38, 38, 38, 38, 38, 38, \
-                                    38, 38, 38, 38, 38, 38, 38, 0, \
-                                  };
-  std::vector<int> velocity_1_ = {200};  // Velocity
-  std::vector<int> positions_3_ = {0, 1023, 2047, 3095, 4095, 3095 ,2047, 1023};   //Position
-  std::vector<int> current_5_ = {20};   //Current Limit 0-1193  https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#profile-acceleration108
-  std::vector<int> positions_5_ = {0, 0, 0, 0, 0, 0,\
-                                  2047, 2047, 2047, 2047, 2047, 2047,\
-                                  4095, 4095, 4095, 4095, 4095, 4095,\
-                                  2047, 2047, 2047, 2047, 2047, 2047};
+  std::vector<int> positions_3_ = {0, 1023, 2047, 3095, 4095, 3095, 2047, 1023};
+  std::vector<int> current_5_ = {0, -38, -38, -38, -38, -38, -38, -38};
+  std::vector<int> positions_5_ = {0, 1023, 2047, 3095, 4095, 3095, 2047, 1023};
+  size_t current_position_index_ = 0;
+};
+
+class JointVelocityPubNode : public rclcpp::Node
+{
+public:
+  using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
+
+  JointVelocityPubNode();
+
+private:
+  void publishData();
+  rclcpp::Publisher<SetPosition>::SharedPtr publisher_;
+  rclcpp::TimerBase::SharedPtr timer_;
+  std::vector<int> velocity_1_ = {0, 100, 200, 300, 200, 100, 0, -100};
+  size_t current_position_index_ = 0;
+};
+
+class JointCurrentPubNode : public rclcpp::Node
+{
+public:
+  using SetCurrent = dynamixel_sdk_custom_interfaces::msg::SetCurrent;
+
+  JointCurrentPubNode();
+
+private:
+  void publishData();
+  rclcpp::Publisher<SetCurrent>::SharedPtr publisher_;
+  rclcpp::TimerBase::SharedPtr timer_;
+  std::vector<int> currents_0_ = {0, -38, -38, -38, 0, 38, 38, 38};
   size_t current_position_index_ = 0;
 };
 

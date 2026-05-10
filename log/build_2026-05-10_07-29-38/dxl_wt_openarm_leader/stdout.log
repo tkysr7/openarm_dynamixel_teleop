@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[ 33%] Built target pub_position_node
+[ 83%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[ 66%] Built target pub_current_node

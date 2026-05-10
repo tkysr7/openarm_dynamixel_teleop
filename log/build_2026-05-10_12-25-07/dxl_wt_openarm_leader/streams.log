@@ -1,0 +1,31 @@
+[0.016s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.121s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.145s] [ 33%] Built target pub_current_node
+[0.151s] [ 50%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[0.152s] [ 83%] Built target pub_position_node
+[2.477s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::motion_compensation()’:
+[2.477s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:172:33: error: no matching function for call to ‘clamp(int16_t&, int, const int&)’
+[2.477s]   172 |     goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
+[2.478s]       |                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.478s] In file included from /usr/include/c++/11/algorithm:62,
+[2.478s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:39:
+[2.478s] /usr/include/c++/11/bits/stl_algo.h:3656:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)’
+[2.478s]  3656 |     clamp(const _Tp& __val, const _Tp& __lo, const _Tp& __hi)
+[2.478s]       |     ^~~~~
+[2.478s] /usr/include/c++/11/bits/stl_algo.h:3656:5: note:   template argument deduction/substitution failed:
+[2.478s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:172:33: note:   deduced conflicting types for parameter ‘const _Tp’ (‘short int’ and ‘int’)
+[2.478s]   172 |     goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
+[2.478s]       |                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.478s] In file included from /usr/include/c++/11/algorithm:62,
+[2.478s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:39:
+[2.478s] /usr/include/c++/11/bits/stl_algo.h:3674:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&, _Compare)’
+[2.478s]  3674 |     clamp(const _Tp& __val, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
+[2.478s]       |     ^~~~~
+[2.478s] /usr/include/c++/11/bits/stl_algo.h:3674:5: note:   template argument deduction/substitution failed:
+[2.478s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:172:33: note:   deduced conflicting types for parameter ‘const _Tp’ (‘short int’ and ‘int’)
+[2.478s]   172 |     goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
+[2.478s]       |                       ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[5.247s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.247s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.247s] gmake: *** [Makefile:146: all] Error 2
+[5.249s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

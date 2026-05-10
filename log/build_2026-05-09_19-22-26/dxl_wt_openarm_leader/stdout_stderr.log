@@ -1,0 +1,12 @@
+Consolidate compiler generated dependencies of target read_write_wt_position_node
+[ 33%] Built target pub_position_node
+[ 66%] Built target pub_current_node
+[ 83%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::motion_compensation()’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:149:5: error: ‘print’ was not declared in this scope; did you mean ‘rint’?
+  149 |     print(present_vel_rad_s_);
+      |     ^~~~~
+      |     rint
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

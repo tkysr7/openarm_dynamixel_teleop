@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[ 66%] Built target pub_current_node
+[ 66%] Built target pub_position_node
+[ 83%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In lambda function:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:424:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpresent_position[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_present_position[m[K’?
+  424 |         reinterpret_cast<uint32_t *>(&[01;31m[Kpresent_position[m[K),
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[Kget_present_position[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

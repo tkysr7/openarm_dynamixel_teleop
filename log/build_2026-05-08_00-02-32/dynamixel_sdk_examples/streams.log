@@ -1,0 +1,21 @@
+[0.015s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[0.141s] [  5%] [32mBuilding CXX object CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o[0m
+[0.146s] [ 10%] [32mBuilding CXX object CMakeFiles/pub_velocity_node.dir/src/pub_velocity_node.cpp.o[0m
+[0.148s] [ 20%] Built target read_write_current_node
+[0.155s] [ 25%] [32mBuilding CXX object CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.o[0m
+[0.155s] [ 35%] Built target read_write_velocity_node
+[0.155s] [ 45%] Built target read_write_current_pos_v1_node
+[0.158s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.o[0m
+[0.160s] [ 60%] Built target read_write_position_node
+[0.162s] [ 65%] [32mBuilding CXX object CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.o[0m
+[0.163s] [ 75%] Built target read_write_current_pos_v2_node
+[4.868s] [ 80%] [32m[1mLinking CXX executable pub_position_node[0m
+[4.971s] [ 85%] [32m[1mLinking CXX executable pub_current_node[0m
+[5.023s] [ 90%] [32m[1mLinking CXX executable pub_current_pos_v1_node[0m
+[5.036s] [ 95%] [32m[1mLinking CXX executable pub_velocity_node[0m
+[5.098s] [ 95%] Built target pub_position_node
+[5.205s] [ 95%] Built target pub_current_node
+[5.205s] [100%] [32m[1mLinking CXX executable pub_current_pos_v2_node[0m
+[5.231s] [100%] Built target pub_current_pos_v1_node
+[5.264s] [100%] Built target pub_velocity_node
+[5.418s] [100%] Built target pub_current_pos_v2_node

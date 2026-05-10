@@ -199,8 +199,6 @@ void ReadWriteNode::read_present_position()
         // 追加: DXLのPresent Positionをradに変換
         double joint_rad =
           (static_cast<double>(present_position) - 2048.0) * 2.0 * M_PI / 4096.0;
-
-        // 追加: OpenArmのjoint1だけに値を入れて、残り6軸は0.0にする
         openarm_msg.data[i] = joint_rad;
 
         RCLCPP_INFO(

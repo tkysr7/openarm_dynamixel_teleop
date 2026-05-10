@@ -1,0 +1,19 @@
+[0.027s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.146s] [35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[0.180s] [ 16%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[0.187s] [ 50%] Built target pub_current_node
+[0.191s] [ 83%] Built target pub_position_node
+[2.705s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[2.705s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:142:20:[m[K [01;31m[Kerror: [m[Kassignment of read-only variable ‘[01m[Kgoal_current[m[K’
+[2.705s]   142 |       [01;31m[Kgoal_current = 15[m[K;
+[2.705s]       |       [01;31m[K~~~~~~~~~~~~~^~~~[m[K
+[2.705s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:144:20:[m[K [01;31m[Kerror: [m[Kassignment of read-only variable ‘[01m[Kgoal_current[m[K’
+[2.705s]   144 |       [01;31m[Kgoal_current = -15[m[K;
+[2.705s]       |       [01;31m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.705s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:146:20:[m[K [01;31m[Kerror: [m[Kassignment of read-only variable ‘[01m[Kgoal_current[m[K’
+[2.706s]   146 |       [01;31m[Kgoal_current = 0[m[K;
+[2.706s]       |       [01;31m[K~~~~~~~~~~~~~^~~[m[K
+[5.623s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.623s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.623s] gmake: *** [Makefile:146: all] Error 2
+[5.625s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

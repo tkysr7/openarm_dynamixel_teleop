@@ -1,0 +1,41 @@
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:162:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  162 |     if (std::abs(present_vel_rad_s_[dxl_ids_ [[01;31m[Ki[m[K]-1]) > 1e-3) {
+      |                                               [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:166:73:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  166 |     const double velocity_ratio = std::abs(present_vel_rad_s_[dxl_ids_ [[01;31m[Ki[m[K]-1]) / vs;
+      |                                                                         [01;31m[K^[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktau_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Ktau_f[m[K’?
+  171 |     [01;31m[Ktau_cmd[m[K = J * acc + tau_f
+      |     [01;31m[K^~~~~~~[m[K
+      |     [32m[Ktau_f[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:171:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope; did you mean ‘[01m[Kacct[m[K’?
+  171 |     tau_cmd = J * [01;31m[Kacc[m[K + tau_f
+      |                   [01;31m[K^~~[m[K
+      |                   [32m[Kacct[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:180:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_current[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_current_mA[m[K’?
+  180 |       static_cast<uint16_t>([01;31m[Kgoal_current[m[K),
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+      |                             [32m[Kgoal_current_mA[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:147:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgoal_current_mA[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  147 |   int16_t [01;35m[Kgoal_current_mA[m[K = 0;
+      |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:309:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kprv_vel_rad_s_[m[K’ was not declared in this scope; did you mean ‘[01m[Kprev_vel_rad_s_[m[K’?
+  309 |         [01;31m[Kprv_vel_rad_s_[m[K[dxl_ids_ [i]-1],
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

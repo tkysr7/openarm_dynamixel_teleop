@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[ 66%] Built target pub_position_node
+[ 66%] Built target pub_current_node
+[ 83%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:173:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 10 has type ‘[01m[Kstd::array<int, 18>::value_type[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  173 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %.3f"[m[K,
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:173:97:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  173 |     RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: [01;36m[K%.3f[m[K",
+      |                                                                                              [01;36m[K~~~^[m[K
+      |                                                                                                 [01;36m[K|[m[K
+      |                                                                                                 [01;36m[Kdouble[m[K
+      |                                                                                              [32m[K%.3d[m[K
+[100%] [32m[1mLinking CXX executable read_write_wt_position_node[0m
+[100%] Built target read_write_wt_position_node
+-- Install configuration: ""
+-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node
+-- Set runtime path of "/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node" to ""
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_position_node
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include/
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//pub_dynamixel_data_node.hpp
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//read_write_wt_position_node.hpp
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/package_run_dependencies/dxl_wt_openarm_leader
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/parent_prefix_path/dxl_wt_openarm_leader
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.sh
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.dsv
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.bash
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.sh
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.zsh
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.dsv
+-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.dsv
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/packages/dxl_wt_openarm_leader
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig.cmake
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig-version.cmake
+-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.xml

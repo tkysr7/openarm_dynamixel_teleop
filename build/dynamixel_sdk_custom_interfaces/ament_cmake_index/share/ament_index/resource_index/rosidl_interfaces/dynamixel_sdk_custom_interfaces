@@ -1,3 +1,5 @@
+msg/SetCurrent.idl
+msg/SetCurrent.msg
 msg/SetPosition.idl
 msg/SetPosition.msg
 srv/GetPosition.idl

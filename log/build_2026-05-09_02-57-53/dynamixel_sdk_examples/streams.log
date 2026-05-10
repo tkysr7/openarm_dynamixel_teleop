@@ -1,0 +1,29 @@
+[0.023s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[0.137s] [35m[1mConsolidate compiler generated dependencies of target pub_current_pos_v1_node[0m
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target pub_current_pos_v2_node[0m
+[0.149s] [ 10%] Built target read_write_current_node
+[0.152s] [ 20%] Built target pub_current_node
+[0.167s] [ 30%] Built target read_write_velocity_node
+[0.167s] [ 40%] Built target pub_position_node
+[0.170s] [ 50%] Built target read_write_current_pos_v2_node
+[0.171s] [ 55%] [32mBuilding CXX object CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.o[0m
+[0.173s] [ 65%] Built target read_write_current_pos_v1_node
+[0.174s] [ 75%] Built target pub_velocity_node
+[0.176s] [ 85%] Built target read_write_position_node
+[0.180s] [ 90%] [32mBuilding CXX object CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.o[0m
+[2.475s] [01m[K/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/src/pub_current_pos_v1_node.cpp:[m[K In member function ‘[01m[Kvoid JointPositionPubNode::publishData()[m[K’:
+[2.475s] [01m[K/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/src/pub_current_pos_v1_node.cpp:41:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_5_[m[K’ was not declared in this scope
+[2.475s]    41 |   msg.position = [01;31m[Kcurrent_5_[m[K[current_position_index_];
+[2.475s]       |                  [01;31m[K^~~~~~~~~~[m[K
+[2.529s] [01m[K/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/src/pub_current_pos_v2_node.cpp:[m[K In member function ‘[01m[Kvoid JointPositionPubNode::publishData()[m[K’:
+[2.529s] [01m[K/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples/src/pub_current_pos_v2_node.cpp:42:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions_5_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpositions_3_[m[K’?
+[2.529s]    42 |   msg.position = [01;31m[Kpositions_5_[m[K[current_position_index_];
+[2.529s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[2.529s]       |                  [32m[Kpositions_3_[m[K
+[3.286s] gmake[2]: *** [CMakeFiles/pub_current_pos_v1_node.dir/build.make:76: CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.o] Error 1
+[3.287s] gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/pub_current_pos_v1_node.dir/all] Error 2
+[3.287s] gmake[1]: *** Waiting for unfinished jobs....
+[3.301s] gmake[2]: *** [CMakeFiles/pub_current_pos_v2_node.dir/build.make:76: CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.o] Error 1
+[3.301s] gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/pub_current_pos_v2_node.dir/all] Error 2
+[3.301s] gmake: *** [Makefile:146: all] Error 2
+[3.304s] Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '2': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12

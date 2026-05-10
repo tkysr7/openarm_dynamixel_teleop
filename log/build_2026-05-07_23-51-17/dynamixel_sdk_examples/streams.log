@@ -1,0 +1,50 @@
+[0.016s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target pub_current_node[0m
+[0.116s] [35m[1mConsolidate compiler generated dependencies of target pub_velocity_node[0m
+[0.117s] [35m[1mConsolidate compiler generated dependencies of target read_write_position_node[0m
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target read_write_current_node[0m
+[0.120s] [35m[1mConsolidate compiler generated dependencies of target pub_position_node[0m
+[0.120s] [35m[1mConsolidate compiler generated dependencies of target read_write_current_pos_v1_node[0m
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target pub_current_pos_v1_node[0m
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target read_write_velocity_node[0m
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target read_write_current_pos_v2_node[0m
+[0.138s] [35m[1mConsolidate compiler generated dependencies of target pub_current_pos_v2_node[0m
+[0.146s] [ 10%] Built target read_write_position_node
+[0.152s] [ 20%] Built target pub_current_node
+[0.155s] [ 30%] Built target read_write_current_pos_v1_node
+[0.157s] [ 40%] Built target pub_position_node
+[0.157s] [ 50%] Built target read_write_current_node
+[0.168s] [ 60%] Built target pub_velocity_node
+[0.168s] [ 70%] Built target read_write_velocity_node
+[0.168s] [ 80%] Built target pub_current_pos_v1_node
+[0.174s] [ 90%] Built target read_write_current_pos_v2_node
+[0.174s] [100%] Built target pub_current_pos_v2_node
+[0.192s] Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[0.195s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples
+[0.245s] -- Install configuration: ""
+[0.245s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_node
+[0.245s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_node
+[0.246s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_velocity_node
+[0.246s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_velocity_node
+[0.247s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_position_node
+[0.248s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_position_node
+[0.248s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_pos_v1_node
+[0.248s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_pos_v1_node
+[0.248s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_pos_v2_node
+[0.249s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_pos_v2_node
+[0.249s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
+[0.249s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
+[0.249s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.sh
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.dsv
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.bash
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.sh
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.zsh
+[0.250s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.dsv
+[0.250s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv
+[0.251s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/packages/dynamixel_sdk_examples
+[0.251s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake
+[0.251s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake
+[0.251s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.xml
+[0.264s] Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples
