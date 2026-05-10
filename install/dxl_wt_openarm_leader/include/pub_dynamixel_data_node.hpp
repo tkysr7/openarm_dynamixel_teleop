@@ -21,22 +21,6 @@
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
 #include "rclcpp/rclcpp.hpp"
 
-class JointPubNode : public rclcpp::Node
-{
-public:
-  using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
-
-  JointPubNode();
-
-private:
-  void publishData();
-  rclcpp::Publisher<SetPosition>::SharedPtr publisher_;
-  rclcpp::TimerBase::SharedPtr timer_;
-  std::vector<int> positions_3_ = {0, 1023, 2047, 3095, 4095, 3095, 2047, 1023};
-  
-  size_t current_position_index_ = 0;
-};
-
 class JointCurrentPubNode : public rclcpp::Node
 {
 public:

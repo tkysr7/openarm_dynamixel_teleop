@@ -1,5 +1,4 @@
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node
-/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_position_node
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//pub_dynamixel_data_node.hpp
 /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//read_write_wt_position_node.hpp

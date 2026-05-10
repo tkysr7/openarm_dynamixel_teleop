@@ -30,13 +30,6 @@ ament_target_dependencies(read_write_wt_position_node
   control_msgs
 )
 
-add_executable(pub_position_node src/pub_position_node.cpp)
-ament_target_dependencies(pub_position_node
-  dynamixel_sdk_custom_interfaces
-  dynamixel_sdk
-  rclcpp
-)
-
 add_executable(pub_current_node src/pub_current_node.cpp) 
 ament_target_dependencies(pub_current_node
   dynamixel_sdk_custom_interfaces
@@ -46,7 +39,6 @@ ament_target_dependencies(pub_current_node
 
 install(TARGETS
   read_write_wt_position_node
-  pub_position_node
   pub_current_node
   DESTINATION lib/${PROJECT_NAME}
 )

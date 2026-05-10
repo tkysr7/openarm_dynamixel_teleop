@@ -1,0 +1,10 @@
+[ 10%] Built target read_write_current_node
+[ 20%] Built target pub_current_node
+[ 30%] Built target read_write_current_pos_v2_node
+[ 40%] Built target read_write_velocity_node
+[ 60%] Built target read_write_current_pos_v1_node
+[ 50%] Built target pub_current_pos_v1_node
+[ 70%] Built target read_write_position_node
+[ 80%] Built target pub_position_node
+[ 90%] Built target pub_velocity_node
+[100%] Built target pub_current_pos_v2_node

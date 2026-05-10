@@ -1,0 +1,60 @@
+[0.032s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.102s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.336s] -- Found dynamixel_sdk: 3.7.60 (/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.339s] -- Found dynamixel_sdk_custom_interfaces: 3.7.60 (/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)
+[0.374s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.379s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.386s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.399s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.441s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.470s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.475s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.606s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.659s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.752s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.764s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.894s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.894s] -- Configured cppcheck include dirs: /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/include
+[0.894s] -- Configured cppcheck exclude dirs and/or files: 
+[0.895s] -- Added test 'lint_cmake' to check CMake code style
+[0.895s] -- Added test 'uncrustify' to check C / C++ code style
+[0.896s] -- Configured uncrustify additional arguments: 
+[0.896s] -- Added test 'xmllint' to check XML markup files
+[0.897s] -- Configuring done
+[0.913s] -- Generating done
+[0.920s] -- Build files have been written to: /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[0.969s] [35m[1mConsolidate compiler generated dependencies of target pub_current_node[0m
+[0.971s] [35m[1mConsolidate compiler generated dependencies of target pub_position_node[0m
+[0.993s] [ 16%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[0.993s] [ 50%] Built target pub_current_node
+[0.993s] [ 83%] Built target pub_position_node
+[10.915s] [100%] [32m[1mLinking CXX executable read_write_wt_position_node[0m
+[11.494s] [100%] Built target read_write_wt_position_node
+[11.507s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '0': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[11.508s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader
+[11.556s] -- Install configuration: ""
+[11.557s] -- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node
+[11.561s] -- Set runtime path of "/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node" to ""
+[11.562s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_position_node
+[11.562s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node
+[11.562s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include/
+[11.562s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//pub_dynamixel_data_node.hpp
+[11.563s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//read_write_wt_position_node.hpp
+[11.563s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/package_run_dependencies/dxl_wt_openarm_leader
+[11.563s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/parent_prefix_path/dxl_wt_openarm_leader
+[11.563s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.sh
+[11.563s] -- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.dsv
+[11.563s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.sh
+[11.563s] -- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.dsv
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.bash
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.sh
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.zsh
+[11.564s] -- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.dsv
+[11.564s] -- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.dsv
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/packages/dxl_wt_openarm_leader
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig.cmake
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig-version.cmake
+[11.564s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.xml
+[11.566s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '0': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader

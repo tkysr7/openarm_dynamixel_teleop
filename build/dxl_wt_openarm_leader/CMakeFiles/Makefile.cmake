@@ -846,6 +846,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/dxl_wt_openarm_leader_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/read_write_wt_position_node.dir/DependInfo.cmake"
-  "CMakeFiles/pub_position_node.dir/DependInfo.cmake"
   "CMakeFiles/pub_current_node.dir/DependInfo.cmake"
   )

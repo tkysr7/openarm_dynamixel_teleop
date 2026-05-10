@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader
 
 # The main recursive "all" target.
 all: CMakeFiles/read_write_wt_position_node.dir/all
-all: CMakeFiles/pub_position_node.dir/all
 all: CMakeFiles/pub_current_node.dir/all
 .PHONY : all
 
@@ -76,7 +75,6 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/dxl_wt_openarm_leader_uninstall.dir/clean
 clean: CMakeFiles/read_write_wt_position_node.dir/clean
-clean: CMakeFiles/pub_position_node.dir/clean
 clean: CMakeFiles/pub_current_node.dir/clean
 .PHONY : clean
 
@@ -139,7 +137,7 @@ CMakeFiles/dxl_wt_openarm_leader_uninstall.dir/clean:
 CMakeFiles/read_write_wt_position_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_wt_position_node.dir/build.make CMakeFiles/read_write_wt_position_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_wt_position_node.dir/build.make CMakeFiles/read_write_wt_position_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader/CMakeFiles --progress-num=5,6 "Built target read_write_wt_position_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader/CMakeFiles --progress-num=3,4 "Built target read_write_wt_position_node"
 .PHONY : CMakeFiles/read_write_wt_position_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -157,32 +155,6 @@ read_write_wt_position_node: CMakeFiles/read_write_wt_position_node.dir/rule
 CMakeFiles/read_write_wt_position_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_wt_position_node.dir/build.make CMakeFiles/read_write_wt_position_node.dir/clean
 .PHONY : CMakeFiles/read_write_wt_position_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/pub_position_node.dir
-
-# All Build rule for target.
-CMakeFiles/pub_position_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader/CMakeFiles --progress-num=3,4 "Built target pub_position_node"
-.PHONY : CMakeFiles/pub_position_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/pub_position_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pub_position_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader/CMakeFiles 0
-.PHONY : CMakeFiles/pub_position_node.dir/rule
-
-# Convenience name for target.
-pub_position_node: CMakeFiles/pub_position_node.dir/rule
-.PHONY : pub_position_node
-
-# clean rule for target.
-CMakeFiles/pub_position_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/clean
-.PHONY : CMakeFiles/pub_position_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/pub_current_node.dir

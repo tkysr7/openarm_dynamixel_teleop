@@ -1,0 +1,10 @@
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_position_node.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pub_position_node.dir/build.make:76: CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pub_position_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/pub_current_node.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pub_current_node.dir/build.make:76: CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pub_current_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

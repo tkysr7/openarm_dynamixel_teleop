@@ -172,7 +172,7 @@ void ReadWriteWTNode::motion_compensation()
     goal_current_mA = std::clamp(goal_current_mA, -CURRENT_LIMIT_mA, CURRENT_LIMIT_mA);
 
 
-    RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %d",
+    RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %d ",
                  dxl_id, goal_current_mA, present_vel_rad_s_[dxl_id -1],tau_f, tau_imp,present_position_[dxl_id-1]);
 
     dxl_comm_result = packetHandler->write2ByteTxRx(

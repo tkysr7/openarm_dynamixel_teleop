@@ -1,0 +1,11 @@
+[0.017s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples -- -j12 -l12
+[0.162s] [ 10%] Built target read_write_current_node
+[0.164s] [ 20%] Built target pub_current_node
+[0.173s] [ 30%] Built target read_write_current_pos_v2_node
+[0.174s] [ 40%] Built target read_write_velocity_node
+[0.174s] [ 60%] Built target read_write_current_pos_v1_node
+[0.174s] [ 50%] Built target pub_current_pos_v1_node
+[0.180s] [ 70%] Built target read_write_position_node
+[0.180s] [ 80%] Built target pub_position_node
+[0.197s] [ 90%] Built target pub_velocity_node
+[0.198s] [100%] Built target pub_current_pos_v2_node

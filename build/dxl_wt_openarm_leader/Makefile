@@ -211,19 +211,6 @@ read_write_wt_position_node/fast:
 .PHONY : read_write_wt_position_node/fast
 
 #=============================================================================
-# Target rules for targets named pub_position_node
-
-# Build rule for target.
-pub_position_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_position_node
-.PHONY : pub_position_node
-
-# fast build rule for target.
-pub_position_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/build
-.PHONY : pub_position_node/fast
-
-#=============================================================================
 # Target rules for targets named pub_current_node
 
 # Build rule for target.
@@ -259,30 +246,6 @@ src/pub_current_node.s: src/pub_current_node.cpp.s
 src/pub_current_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_node.dir/build.make CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.s
 .PHONY : src/pub_current_node.cpp.s
-
-src/pub_position_node.o: src/pub_position_node.cpp.o
-.PHONY : src/pub_position_node.o
-
-# target to build an object file
-src/pub_position_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.o
-.PHONY : src/pub_position_node.cpp.o
-
-src/pub_position_node.i: src/pub_position_node.cpp.i
-.PHONY : src/pub_position_node.i
-
-# target to preprocess a source file
-src/pub_position_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.i
-.PHONY : src/pub_position_node.cpp.i
-
-src/pub_position_node.s: src/pub_position_node.cpp.s
-.PHONY : src/pub_position_node.s
-
-# target to generate assembly for a file
-src/pub_position_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.s
-.PHONY : src/pub_position_node.cpp.s
 
 src/read_write_wt_position_node.o: src/read_write_wt_position_node.cpp.o
 .PHONY : src/read_write_wt_position_node.o
@@ -324,14 +287,10 @@ help:
 	@echo "... dxl_wt_openarm_leader_uninstall"
 	@echo "... uninstall"
 	@echo "... pub_current_node"
-	@echo "... pub_position_node"
 	@echo "... read_write_wt_position_node"
 	@echo "... src/pub_current_node.o"
 	@echo "... src/pub_current_node.i"
 	@echo "... src/pub_current_node.s"
-	@echo "... src/pub_position_node.o"
-	@echo "... src/pub_position_node.i"
-	@echo "... src/pub_position_node.s"
 	@echo "... src/read_write_wt_position_node.o"
 	@echo "... src/read_write_wt_position_node.i"
 	@echo "... src/read_write_wt_position_node.s"
