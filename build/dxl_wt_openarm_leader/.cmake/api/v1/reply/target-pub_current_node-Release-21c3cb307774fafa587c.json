@@ -90,6 +90,9 @@
 			"compileCommandFragments" : 
 			[
 				{
+					"fragment" : "-O3 -DNDEBUG"
+				},
+				{
 					"backtrace" : 6,
 					"fragment" : "-Wall"
 				},
@@ -280,6 +283,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"

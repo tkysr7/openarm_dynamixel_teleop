@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000498] (-) JobUnselected: {'identifier': 'dxl_openarm_leader'}
+[0.000611] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.000632] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.000647] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.000659] (-) JobUnselected: {'identifier': 'openarm'}
+[0.000670] (-) JobUnselected: {'identifier': 'openarm_bimanual_moveit_config'}
+[0.000681] (-) JobUnselected: {'identifier': 'openarm_bringup'}
+[0.000692] (-) JobUnselected: {'identifier': 'openarm_description'}
+[0.000705] (dxl_wt_openarm_leader) JobQueued: {'identifier': 'dxl_wt_openarm_leader', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk'), ('dynamixel_sdk_custom_interfaces', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces')])}
+[0.000724] (dxl_wt_openarm_leader) JobStarted: {'identifier': 'dxl_wt_openarm_leader'}
+[0.033599] (dxl_wt_openarm_leader) JobProgress: {'identifier': 'dxl_wt_openarm_leader', 'progress': 'cmake'}
+[0.034653] (dxl_wt_openarm_leader) Command: {'cmd': ['/home/tky/.pyenv/shims/cmake', '/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader'], 'cwd': '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/tky'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'tky'), ('LC_TIME', 'ja_JP.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SSH_AGENT_PID', '2177'), ('XDG_SESSION_TYPE', 'x11'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('DEBUG', 'release'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tky'), ('CHROME_DESKTOP', 'code.desktop'), ('PYENV_SHELL', 'bash'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-09a558d7-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2024'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2326'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3151'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tky'), ('JOURNAL_STREAM', '8:11025'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tky/.local/bin:/home/tky/.codex/tmp/arg0/codex-arg06Kgmsz:/home/tky/.local/bin:/home/tky/.pyenv/plugins/pyenv-virtualenv/shims:/home/tky/.pyenv/shims:/home/tky/.pyenv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tky/.vscode/extensions/openai.chatgpt-26.506.31421-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/tkyMEK:@/tmp/.ICE-unix/2289,unix/tkyMEK:/tmp/.ICE-unix/2289'), ('INVOCATION_ID', '99aea290fa184995af8bdc6c2667f90b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':10.0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('CODEX_THREAD_ID', '019e21e7-e9df-7ae1-8108-254021ca9c93'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/tky/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('PYENV_ROOT', '/home/tky/.pyenv'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VSCODE_PID', '3151'), ('CMAKE_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[0.099687] (-) TimerEvent: {}
+[0.115665] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199809] (-) TimerEvent: {}
+[0.300002] (-) TimerEvent: {}
+[0.360506] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found dynamixel_sdk: 3.7.60 (/home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)\n'}
+[0.361837] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found dynamixel_sdk_custom_interfaces: 3.7.60 (/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)\n'}
+[0.392564] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.395438] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400096] (-) TimerEvent: {}
+[0.402520] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.416276] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.446423] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500203] (-) TimerEvent: {}
+[0.532849] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600297] (-) TimerEvent: {}
+[0.613763] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.618111] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700388] (-) TimerEvent: {}
+[0.755822] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800499] (-) TimerEvent: {}
+[0.836143] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.900616] (-) TimerEvent: {}
+[0.980344] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.995974] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.000737] (-) TimerEvent: {}
+[1.095788] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.096002] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/include\n'}
+[1.096065] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.098313] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.099098] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.099555] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.100916] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.101048] (-) TimerEvent: {}
+[1.101070] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.101640] (dxl_wt_openarm_leader) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.105853] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.134392] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Generating done\n'}
+[1.139627] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Build files have been written to: /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader\n'}
+[1.148208] (dxl_wt_openarm_leader) CommandEnded: {'returncode': 0}
+[1.148744] (dxl_wt_openarm_leader) JobProgress: {'identifier': 'dxl_wt_openarm_leader', 'progress': 'build'}
+[1.149311] (dxl_wt_openarm_leader) Command: {'cmd': ['/home/tky/.pyenv/shims/cmake', '--build', '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader', '--', '-j12', '-l12'], 'cwd': '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/tky'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'tky'), ('LC_TIME', 'ja_JP.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SSH_AGENT_PID', '2177'), ('XDG_SESSION_TYPE', 'x11'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('DEBUG', 'release'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tky'), ('CHROME_DESKTOP', 'code.desktop'), ('PYENV_SHELL', 'bash'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-09a558d7-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2024'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2326'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3151'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tky'), ('JOURNAL_STREAM', '8:11025'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tky/.local/bin:/home/tky/.codex/tmp/arg0/codex-arg06Kgmsz:/home/tky/.local/bin:/home/tky/.pyenv/plugins/pyenv-virtualenv/shims:/home/tky/.pyenv/shims:/home/tky/.pyenv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tky/.vscode/extensions/openai.chatgpt-26.506.31421-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/tkyMEK:@/tmp/.ICE-unix/2289,unix/tkyMEK:/tmp/.ICE-unix/2289'), ('INVOCATION_ID', '99aea290fa184995af8bdc6c2667f90b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':10.0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('CODEX_THREAD_ID', '019e21e7-e9df-7ae1-8108-254021ca9c93'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/tky/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('PYENV_ROOT', '/home/tky/.pyenv'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VSCODE_PID', '3151'), ('CMAKE_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[1.201183] (-) TimerEvent: {}
+[1.234592] (dxl_wt_openarm_leader) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target read_write_wt_position_node\n'}
+[1.235435] (dxl_wt_openarm_leader) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target pub_current_node\n'}
+[1.261514] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o\n'}
+[1.264153] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o\n'}
+[1.301277] (-) TimerEvent: {}
+[1.401438] (-) TimerEvent: {}
+[1.501616] (-) TimerEvent: {}
+[1.601838] (-) TimerEvent: {}
+[1.702044] (-) TimerEvent: {}
+[1.802256] (-) TimerEvent: {}
+[1.902442] (-) TimerEvent: {}
+[2.002653] (-) TimerEvent: {}
+[2.102883] (-) TimerEvent: {}
+[2.203074] (-) TimerEvent: {}
+[2.303297] (-) TimerEvent: {}
+[2.403509] (-) TimerEvent: {}
+[2.503699] (-) TimerEvent: {}
+[2.603860] (-) TimerEvent: {}
+[2.704084] (-) TimerEvent: {}
+[2.804270] (-) TimerEvent: {}
+[2.904419] (-) TimerEvent: {}
+[3.004601] (-) TimerEvent: {}
+[3.104783] (-) TimerEvent: {}
+[3.204969] (-) TimerEvent: {}
+[3.305151] (-) TimerEvent: {}
+[3.405274] (-) TimerEvent: {}
+[3.505422] (-) TimerEvent: {}
+[3.605582] (-) TimerEvent: {}
+[3.705767] (-) TimerEvent: {}
+[3.805935] (-) TimerEvent: {}
+[3.906134] (-) TimerEvent: {}
+[4.006277] (-) TimerEvent: {}
+[4.106428] (-) TimerEvent: {}
+[4.206599] (-) TimerEvent: {}
+[4.306778] (-) TimerEvent: {}
+[4.406934] (-) TimerEvent: {}
+[4.507129] (-) TimerEvent: {}
+[4.607281] (-) TimerEvent: {}
+[4.707431] (-) TimerEvent: {}
+[4.807608] (-) TimerEvent: {}
+[4.907789] (-) TimerEvent: {}
+[5.008000] (-) TimerEvent: {}
+[5.108227] (-) TimerEvent: {}
+[5.208573] (-) TimerEvent: {}
+[5.308759] (-) TimerEvent: {}
+[5.408938] (-) TimerEvent: {}
+[5.509114] (-) TimerEvent: {}
+[5.609270] (-) TimerEvent: {}
+[5.709417] (-) TimerEvent: {}
+[5.809589] (-) TimerEvent: {}
+[5.909737] (-) TimerEvent: {}
+[5.949161] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[ 75%] Linking CXX executable pub_current_node\n'}
+[6.009858] (-) TimerEvent: {}
+[6.076405] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[ 75%] Built target pub_current_node\n'}
+[6.109977] (-) TimerEvent: {}
+[6.210162] (-) TimerEvent: {}
+[6.310325] (-) TimerEvent: {}
+[6.410515] (-) TimerEvent: {}
+[6.510704] (-) TimerEvent: {}
+[6.610899] (-) TimerEvent: {}
+[6.711086] (-) TimerEvent: {}
+[6.811264] (-) TimerEvent: {}
+[6.911409] (-) TimerEvent: {}
+[7.011584] (-) TimerEvent: {}
+[7.111760] (-) TimerEvent: {}
+[7.211938] (-) TimerEvent: {}
+[7.312114] (-) TimerEvent: {}
+[7.412275] (-) TimerEvent: {}
+[7.512421] (-) TimerEvent: {}
+[7.612610] (-) TimerEvent: {}
+[7.712786] (-) TimerEvent: {}
+[7.812963] (-) TimerEvent: {}
+[7.913139] (-) TimerEvent: {}
+[8.013299] (-) TimerEvent: {}
+[8.113469] (-) TimerEvent: {}
+[8.213671] (-) TimerEvent: {}
+[8.313868] (-) TimerEvent: {}
+[8.414096] (-) TimerEvent: {}
+[8.514311] (-) TimerEvent: {}
+[8.614526] (-) TimerEvent: {}
+[8.714724] (-) TimerEvent: {}
+[8.814954] (-) TimerEvent: {}
+[8.915155] (-) TimerEvent: {}
+[9.015286] (-) TimerEvent: {}
+[9.115469] (-) TimerEvent: {}
+[9.215654] (-) TimerEvent: {}
+[9.315833] (-) TimerEvent: {}
+[9.415987] (-) TimerEvent: {}
+[9.516168] (-) TimerEvent: {}
+[9.616324] (-) TimerEvent: {}
+[9.716497] (-) TimerEvent: {}
+[9.816677] (-) TimerEvent: {}
+[9.916853] (-) TimerEvent: {}
+[10.017034] (-) TimerEvent: {}
+[10.117224] (-) TimerEvent: {}
+[10.217376] (-) TimerEvent: {}
+[10.317552] (-) TimerEvent: {}
+[10.417729] (-) TimerEvent: {}
+[10.517910] (-) TimerEvent: {}
+[10.618094] (-) TimerEvent: {}
+[10.718263] (-) TimerEvent: {}
+[10.818417] (-) TimerEvent: {}
+[10.918598] (-) TimerEvent: {}
+[11.018787] (-) TimerEvent: {}
+[11.118970] (-) TimerEvent: {}
+[11.219131] (-) TimerEvent: {}
+[11.319282] (-) TimerEvent: {}
+[11.419430] (-) TimerEvent: {}
+[11.519601] (-) TimerEvent: {}
+[11.619743] (-) TimerEvent: {}
+[11.719916] (-) TimerEvent: {}
+[11.820090] (-) TimerEvent: {}
+[11.920268] (-) TimerEvent: {}
+[12.020432] (-) TimerEvent: {}
+[12.120657] (-) TimerEvent: {}
+[12.220870] (-) TimerEvent: {}
+[12.321083] (-) TimerEvent: {}
+[12.421285] (-) TimerEvent: {}
+[12.521468] (-) TimerEvent: {}
+[12.621653] (-) TimerEvent: {}
+[12.721831] (-) TimerEvent: {}
+[12.822008] (-) TimerEvent: {}
+[12.922179] (-) TimerEvent: {}
+[13.022355] (-) TimerEvent: {}
+[13.122523] (-) TimerEvent: {}
+[13.138649] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[100%] Linking CXX executable read_write_wt_position_node\n'}
+[13.222736] (-) TimerEvent: {}
+[13.323035] (-) TimerEvent: {}
+[13.398158] (dxl_wt_openarm_leader) StdoutLine: {'line': b'[100%] Built target read_write_wt_position_node\n'}
+[13.406517] (dxl_wt_openarm_leader) CommandEnded: {'returncode': 0}
+[13.407119] (dxl_wt_openarm_leader) JobProgress: {'identifier': 'dxl_wt_openarm_leader', 'progress': 'install'}
+[13.423128] (-) TimerEvent: {}
+[13.449056] (dxl_wt_openarm_leader) Command: {'cmd': ['/home/tky/.pyenv/shims/cmake', '--install', '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader'], 'cwd': '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/tky'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'tky'), ('LC_TIME', 'ja_JP.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SSH_AGENT_PID', '2177'), ('XDG_SESSION_TYPE', 'x11'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('DEBUG', 'release'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tky'), ('CHROME_DESKTOP', 'code.desktop'), ('PYENV_SHELL', 'bash'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-09a558d7-1.11-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2024'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2326'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3151'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tky'), ('JOURNAL_STREAM', '8:11025'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tky/.local/bin:/home/tky/.codex/tmp/arg0/codex-arg06Kgmsz:/home/tky/.local/bin:/home/tky/.pyenv/plugins/pyenv-virtualenv/shims:/home/tky/.pyenv/shims:/home/tky/.pyenv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tky/.vscode/extensions/openai.chatgpt-26.506.31421-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/tkyMEK:@/tmp/.ICE-unix/2289,unix/tkyMEK:/tmp/.ICE-unix/2289'), ('INVOCATION_ID', '99aea290fa184995af8bdc6c2667f90b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':10.0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('CODEX_THREAD_ID', '019e21e7-e9df-7ae1-8108-254021ca9c93'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/tky/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('PYENV_ROOT', '/home/tky/.pyenv'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VSCODE_PID', '3151'), ('CMAKE_PREFIX_PATH', '/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[13.495379] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[13.496290] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node\n'}
+[13.498048] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Set runtime path of "/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/read_write_wt_position_node" to ""\n'}
+[13.498950] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node\n'}
+[13.499665] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Set runtime path of "/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/lib/dxl_wt_openarm_leader/pub_current_node" to ""\n'}
+[13.499836] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include/\n'}
+[13.500144] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//pub_dynamixel_data_node.hpp\n'}
+[13.500283] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/include//read_write_wt_position_node.hpp\n'}
+[13.500529] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/config\n'}
+[13.500644] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/config/params.yaml\n'}
+[13.500721] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/launch\n'}
+[13.500945] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/launch/read_write_wt_position.launch.py\n'}
+[13.501055] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/package_run_dependencies/dxl_wt_openarm_leader\n'}
+[13.501179] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/parent_prefix_path/dxl_wt_openarm_leader\n'}
+[13.501307] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.sh\n'}
+[13.501407] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/ament_prefix_path.dsv\n'}
+[13.501507] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.sh\n'}
+[13.501591] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/environment/path.dsv\n'}
+[13.501661] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.bash\n'}
+[13.501731] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.sh\n'}
+[13.501806] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.zsh\n'}
+[13.501875] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/local_setup.dsv\n'}
+[13.501944] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Installing: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.dsv\n'}
+[13.502012] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/ament_index/resource_index/packages/dxl_wt_openarm_leader\n'}
+[13.502150] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig.cmake\n'}
+[13.502405] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/cmake/dxl_wt_openarm_leaderConfig-version.cmake\n'}
+[13.502948] (dxl_wt_openarm_leader) StdoutLine: {'line': b'-- Up-to-date: /home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader/share/dxl_wt_openarm_leader/package.xml\n'}
+[13.503117] (dxl_wt_openarm_leader) CommandEnded: {'returncode': 0}
+[13.520918] (dxl_wt_openarm_leader) JobEnded: {'identifier': 'dxl_wt_openarm_leader', 'rc': 0}
+[13.521399] (-) EventReactorShutdown: {}

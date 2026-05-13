@@ -3,7 +3,7 @@ read_write_wt_node:
     read_period_ms: 10
     current_limit_ma: 150
     kt: 0.354
-    dxl_ids: [1, 7]
+    dxl_ids: [1,7]
 
     
     #For ストライベック摩擦モデル用変数
