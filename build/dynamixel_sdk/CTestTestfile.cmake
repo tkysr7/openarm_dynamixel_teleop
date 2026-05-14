@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk
+# Source directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk
 # Build directory: /home/tky/workspace/openarm_ws/build/dynamixel_sdk
 # 
 # This file includes the relevant testing commands required for 

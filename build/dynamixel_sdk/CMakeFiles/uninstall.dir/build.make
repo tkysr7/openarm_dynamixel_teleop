@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk
+CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tky/workspace/openarm_ws/build/dynamixel_sdk
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/tky/workspace/openarm_ws/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tky/workspace/openarm_ws/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk /home/tky/workspace/openarm_ws/build/dynamixel_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

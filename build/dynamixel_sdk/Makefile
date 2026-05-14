@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk
+CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tky/workspace/openarm_ws/build/dynamixel_sdk
@@ -210,6 +210,178 @@ dynamixel_sdk/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/build
 .PHONY : dynamixel_sdk/fast
 
+#=============================================================================
+# Target rules for targets named ament_cmake_python_copy_dynamixel_sdk
+
+# Build rule for target.
+ament_cmake_python_copy_dynamixel_sdk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_dynamixel_sdk
+.PHONY : ament_cmake_python_copy_dynamixel_sdk
+
+# fast build rule for target.
+ament_cmake_python_copy_dynamixel_sdk/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_dynamixel_sdk.dir/build.make CMakeFiles/ament_cmake_python_copy_dynamixel_sdk.dir/build
+.PHONY : ament_cmake_python_copy_dynamixel_sdk/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_dynamixel_sdk_egg
+
+# Build rule for target.
+ament_cmake_python_build_dynamixel_sdk_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_dynamixel_sdk_egg
+.PHONY : ament_cmake_python_build_dynamixel_sdk_egg
+
+# fast build rule for target.
+ament_cmake_python_build_dynamixel_sdk_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_dynamixel_sdk_egg.dir/build.make CMakeFiles/ament_cmake_python_build_dynamixel_sdk_egg.dir/build
+.PHONY : ament_cmake_python_build_dynamixel_sdk_egg/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_copy_dynamixel_easy_sdk
+
+# Build rule for target.
+ament_cmake_python_copy_dynamixel_easy_sdk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_dynamixel_easy_sdk
+.PHONY : ament_cmake_python_copy_dynamixel_easy_sdk
+
+# fast build rule for target.
+ament_cmake_python_copy_dynamixel_easy_sdk/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_dynamixel_easy_sdk.dir/build.make CMakeFiles/ament_cmake_python_copy_dynamixel_easy_sdk.dir/build
+.PHONY : ament_cmake_python_copy_dynamixel_easy_sdk/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_dynamixel_easy_sdk_egg
+
+# Build rule for target.
+ament_cmake_python_build_dynamixel_easy_sdk_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_dynamixel_easy_sdk_egg
+.PHONY : ament_cmake_python_build_dynamixel_easy_sdk_egg
+
+# fast build rule for target.
+ament_cmake_python_build_dynamixel_easy_sdk_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_dynamixel_easy_sdk_egg.dir/build.make CMakeFiles/ament_cmake_python_build_dynamixel_easy_sdk_egg.dir/build
+.PHONY : ament_cmake_python_build_dynamixel_easy_sdk_egg/fast
+
+src/dynamixel_easy_sdk/connector.o: src/dynamixel_easy_sdk/connector.cpp.o
+.PHONY : src/dynamixel_easy_sdk/connector.o
+
+# target to build an object file
+src/dynamixel_easy_sdk/connector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.o
+.PHONY : src/dynamixel_easy_sdk/connector.cpp.o
+
+src/dynamixel_easy_sdk/connector.i: src/dynamixel_easy_sdk/connector.cpp.i
+.PHONY : src/dynamixel_easy_sdk/connector.i
+
+# target to preprocess a source file
+src/dynamixel_easy_sdk/connector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.i
+.PHONY : src/dynamixel_easy_sdk/connector.cpp.i
+
+src/dynamixel_easy_sdk/connector.s: src/dynamixel_easy_sdk/connector.cpp.s
+.PHONY : src/dynamixel_easy_sdk/connector.s
+
+# target to generate assembly for a file
+src/dynamixel_easy_sdk/connector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.s
+.PHONY : src/dynamixel_easy_sdk/connector.cpp.s
+
+src/dynamixel_easy_sdk/control_table.o: src/dynamixel_easy_sdk/control_table.cpp.o
+.PHONY : src/dynamixel_easy_sdk/control_table.o
+
+# target to build an object file
+src/dynamixel_easy_sdk/control_table.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.o
+.PHONY : src/dynamixel_easy_sdk/control_table.cpp.o
+
+src/dynamixel_easy_sdk/control_table.i: src/dynamixel_easy_sdk/control_table.cpp.i
+.PHONY : src/dynamixel_easy_sdk/control_table.i
+
+# target to preprocess a source file
+src/dynamixel_easy_sdk/control_table.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.i
+.PHONY : src/dynamixel_easy_sdk/control_table.cpp.i
+
+src/dynamixel_easy_sdk/control_table.s: src/dynamixel_easy_sdk/control_table.cpp.s
+.PHONY : src/dynamixel_easy_sdk/control_table.s
+
+# target to generate assembly for a file
+src/dynamixel_easy_sdk/control_table.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.s
+.PHONY : src/dynamixel_easy_sdk/control_table.cpp.s
+
+src/dynamixel_easy_sdk/dynamixel_error.o: src/dynamixel_easy_sdk/dynamixel_error.cpp.o
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.o
+
+# target to build an object file
+src/dynamixel_easy_sdk/dynamixel_error.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.o
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.cpp.o
+
+src/dynamixel_easy_sdk/dynamixel_error.i: src/dynamixel_easy_sdk/dynamixel_error.cpp.i
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.i
+
+# target to preprocess a source file
+src/dynamixel_easy_sdk/dynamixel_error.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.i
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.cpp.i
+
+src/dynamixel_easy_sdk/dynamixel_error.s: src/dynamixel_easy_sdk/dynamixel_error.cpp.s
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.s
+
+# target to generate assembly for a file
+src/dynamixel_easy_sdk/dynamixel_error.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.s
+.PHONY : src/dynamixel_easy_sdk/dynamixel_error.cpp.s
+
+src/dynamixel_easy_sdk/group_executor.o: src/dynamixel_easy_sdk/group_executor.cpp.o
+.PHONY : src/dynamixel_easy_sdk/group_executor.o
+
+# target to build an object file
+src/dynamixel_easy_sdk/group_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.o
+.PHONY : src/dynamixel_easy_sdk/group_executor.cpp.o
+
+src/dynamixel_easy_sdk/group_executor.i: src/dynamixel_easy_sdk/group_executor.cpp.i
+.PHONY : src/dynamixel_easy_sdk/group_executor.i
+
+# target to preprocess a source file
+src/dynamixel_easy_sdk/group_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.i
+.PHONY : src/dynamixel_easy_sdk/group_executor.cpp.i
+
+src/dynamixel_easy_sdk/group_executor.s: src/dynamixel_easy_sdk/group_executor.cpp.s
+.PHONY : src/dynamixel_easy_sdk/group_executor.s
+
+# target to generate assembly for a file
+src/dynamixel_easy_sdk/group_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.s
+.PHONY : src/dynamixel_easy_sdk/group_executor.cpp.s
+
+src/dynamixel_easy_sdk/motor.o: src/dynamixel_easy_sdk/motor.cpp.o
+.PHONY : src/dynamixel_easy_sdk/motor.o
+
+# target to build an object file
+src/dynamixel_easy_sdk/motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.o
+.PHONY : src/dynamixel_easy_sdk/motor.cpp.o
+
+src/dynamixel_easy_sdk/motor.i: src/dynamixel_easy_sdk/motor.cpp.i
+.PHONY : src/dynamixel_easy_sdk/motor.i
+
+# target to preprocess a source file
+src/dynamixel_easy_sdk/motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.i
+.PHONY : src/dynamixel_easy_sdk/motor.cpp.i
+
+src/dynamixel_easy_sdk/motor.s: src/dynamixel_easy_sdk/motor.cpp.s
+.PHONY : src/dynamixel_easy_sdk/motor.s
+
+# target to generate assembly for a file
+src/dynamixel_easy_sdk/motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.s
+.PHONY : src/dynamixel_easy_sdk/motor.cpp.s
+
 src/dynamixel_sdk/group_bulk_read.o: src/dynamixel_sdk/group_bulk_read.cpp.o
 .PHONY : src/dynamixel_sdk/group_bulk_read.o
 
@@ -257,6 +429,78 @@ src/dynamixel_sdk/group_bulk_write.s: src/dynamixel_sdk/group_bulk_write.cpp.s
 src/dynamixel_sdk/group_bulk_write.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.s
 .PHONY : src/dynamixel_sdk/group_bulk_write.cpp.s
+
+src/dynamixel_sdk/group_fast_bulk_read.o: src/dynamixel_sdk/group_fast_bulk_read.cpp.o
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.o
+
+# target to build an object file
+src/dynamixel_sdk/group_fast_bulk_read.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.o
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.cpp.o
+
+src/dynamixel_sdk/group_fast_bulk_read.i: src/dynamixel_sdk/group_fast_bulk_read.cpp.i
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.i
+
+# target to preprocess a source file
+src/dynamixel_sdk/group_fast_bulk_read.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.i
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.cpp.i
+
+src/dynamixel_sdk/group_fast_bulk_read.s: src/dynamixel_sdk/group_fast_bulk_read.cpp.s
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.s
+
+# target to generate assembly for a file
+src/dynamixel_sdk/group_fast_bulk_read.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.s
+.PHONY : src/dynamixel_sdk/group_fast_bulk_read.cpp.s
+
+src/dynamixel_sdk/group_fast_sync_read.o: src/dynamixel_sdk/group_fast_sync_read.cpp.o
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.o
+
+# target to build an object file
+src/dynamixel_sdk/group_fast_sync_read.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.o
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.cpp.o
+
+src/dynamixel_sdk/group_fast_sync_read.i: src/dynamixel_sdk/group_fast_sync_read.cpp.i
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.i
+
+# target to preprocess a source file
+src/dynamixel_sdk/group_fast_sync_read.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.i
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.cpp.i
+
+src/dynamixel_sdk/group_fast_sync_read.s: src/dynamixel_sdk/group_fast_sync_read.cpp.s
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.s
+
+# target to generate assembly for a file
+src/dynamixel_sdk/group_fast_sync_read.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.s
+.PHONY : src/dynamixel_sdk/group_fast_sync_read.cpp.s
+
+src/dynamixel_sdk/group_handler.o: src/dynamixel_sdk/group_handler.cpp.o
+.PHONY : src/dynamixel_sdk/group_handler.o
+
+# target to build an object file
+src/dynamixel_sdk/group_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.o
+.PHONY : src/dynamixel_sdk/group_handler.cpp.o
+
+src/dynamixel_sdk/group_handler.i: src/dynamixel_sdk/group_handler.cpp.i
+.PHONY : src/dynamixel_sdk/group_handler.i
+
+# target to preprocess a source file
+src/dynamixel_sdk/group_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.i
+.PHONY : src/dynamixel_sdk/group_handler.cpp.i
+
+src/dynamixel_sdk/group_handler.s: src/dynamixel_sdk/group_handler.cpp.s
+.PHONY : src/dynamixel_sdk/group_handler.s
+
+# target to generate assembly for a file
+src/dynamixel_sdk/group_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk.dir/build.make CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.s
+.PHONY : src/dynamixel_sdk/group_handler.cpp.s
 
 src/dynamixel_sdk/group_sync_read.o: src/dynamixel_sdk/group_sync_read.cpp.o
 .PHONY : src/dynamixel_sdk/group_sync_read.o
@@ -439,15 +683,43 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_dynamixel_easy_sdk_egg"
+	@echo "... ament_cmake_python_build_dynamixel_sdk_egg"
+	@echo "... ament_cmake_python_copy_dynamixel_easy_sdk"
+	@echo "... ament_cmake_python_copy_dynamixel_sdk"
 	@echo "... dynamixel_sdk_uninstall"
 	@echo "... uninstall"
 	@echo "... dynamixel_sdk"
+	@echo "... src/dynamixel_easy_sdk/connector.o"
+	@echo "... src/dynamixel_easy_sdk/connector.i"
+	@echo "... src/dynamixel_easy_sdk/connector.s"
+	@echo "... src/dynamixel_easy_sdk/control_table.o"
+	@echo "... src/dynamixel_easy_sdk/control_table.i"
+	@echo "... src/dynamixel_easy_sdk/control_table.s"
+	@echo "... src/dynamixel_easy_sdk/dynamixel_error.o"
+	@echo "... src/dynamixel_easy_sdk/dynamixel_error.i"
+	@echo "... src/dynamixel_easy_sdk/dynamixel_error.s"
+	@echo "... src/dynamixel_easy_sdk/group_executor.o"
+	@echo "... src/dynamixel_easy_sdk/group_executor.i"
+	@echo "... src/dynamixel_easy_sdk/group_executor.s"
+	@echo "... src/dynamixel_easy_sdk/motor.o"
+	@echo "... src/dynamixel_easy_sdk/motor.i"
+	@echo "... src/dynamixel_easy_sdk/motor.s"
 	@echo "... src/dynamixel_sdk/group_bulk_read.o"
 	@echo "... src/dynamixel_sdk/group_bulk_read.i"
 	@echo "... src/dynamixel_sdk/group_bulk_read.s"
 	@echo "... src/dynamixel_sdk/group_bulk_write.o"
 	@echo "... src/dynamixel_sdk/group_bulk_write.i"
 	@echo "... src/dynamixel_sdk/group_bulk_write.s"
+	@echo "... src/dynamixel_sdk/group_fast_bulk_read.o"
+	@echo "... src/dynamixel_sdk/group_fast_bulk_read.i"
+	@echo "... src/dynamixel_sdk/group_fast_bulk_read.s"
+	@echo "... src/dynamixel_sdk/group_fast_sync_read.o"
+	@echo "... src/dynamixel_sdk/group_fast_sync_read.i"
+	@echo "... src/dynamixel_sdk/group_fast_sync_read.s"
+	@echo "... src/dynamixel_sdk/group_handler.o"
+	@echo "... src/dynamixel_sdk/group_handler.i"
+	@echo "... src/dynamixel_sdk/group_handler.s"
 	@echo "... src/dynamixel_sdk/group_sync_read.o"
 	@echo "... src/dynamixel_sdk/group_sync_read.i"
 	@echo "... src/dynamixel_sdk/group_sync_read.s"

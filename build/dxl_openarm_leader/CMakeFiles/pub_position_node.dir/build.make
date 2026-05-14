@@ -98,8 +98,8 @@ pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_i
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so
-pub_position_node: /opt/ros/humble/lib/librclcpp.so
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+pub_position_node: /opt/ros/humble/lib/librclcpp.so
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
 pub_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
 pub_position_node: /opt/ros/humble/lib/liblibstatistics_collector.so

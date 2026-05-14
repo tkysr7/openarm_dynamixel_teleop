@@ -16,7 +16,7 @@ set(_dynamixel_sdk_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT dynamixel_sdk_FIND_QUIETLY)
-  message(STATUS "Found dynamixel_sdk: 3.7.60 (${dynamixel_sdk_DIR})")
+  message(STATUS "Found dynamixel_sdk: 4.0.5 (${dynamixel_sdk_DIR})")
 endif()
 
 # warn when using a deprecated package
@@ -36,7 +36,7 @@ endif()
 set(dynamixel_sdk_FOUND_AMENT_PACKAGE TRUE)
 
 # include all config extra files
-set(_extras "ament_cmake_export_include_directories-extras.cmake;ament_cmake_export_libraries-extras.cmake")
+set(_extras "ament_cmake_export_targets-extras.cmake;ament_cmake_export_include_directories-extras.cmake;ament_cmake_export_libraries-extras.cmake")
 foreach(_extra ${_extras})
   include("${dynamixel_sdk_DIR}/${_extra}")
 endforeach()

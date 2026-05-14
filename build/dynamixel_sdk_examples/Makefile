@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_examples
+CMAKE_SOURCE_DIR = /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples
@@ -198,374 +198,41 @@ dynamixel_sdk_examples_uninstall/fast:
 .PHONY : dynamixel_sdk_examples_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named read_write_current_node
+# Target rules for targets named read_write_node
 
 # Build rule for target.
-read_write_current_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_current_node
-.PHONY : read_write_current_node
+read_write_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_node
+.PHONY : read_write_node
 
 # fast build rule for target.
-read_write_current_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_node.dir/build.make CMakeFiles/read_write_current_node.dir/build
-.PHONY : read_write_current_node/fast
+read_write_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/build
+.PHONY : read_write_node/fast
 
-#=============================================================================
-# Target rules for targets named pub_current_node
-
-# Build rule for target.
-pub_current_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_current_node
-.PHONY : pub_current_node
-
-# fast build rule for target.
-pub_current_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_node.dir/build.make CMakeFiles/pub_current_node.dir/build
-.PHONY : pub_current_node/fast
-
-#=============================================================================
-# Target rules for targets named read_write_velocity_node
-
-# Build rule for target.
-read_write_velocity_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_velocity_node
-.PHONY : read_write_velocity_node
-
-# fast build rule for target.
-read_write_velocity_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_velocity_node.dir/build.make CMakeFiles/read_write_velocity_node.dir/build
-.PHONY : read_write_velocity_node/fast
-
-#=============================================================================
-# Target rules for targets named pub_velocity_node
-
-# Build rule for target.
-pub_velocity_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_velocity_node
-.PHONY : pub_velocity_node
-
-# fast build rule for target.
-pub_velocity_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_velocity_node.dir/build.make CMakeFiles/pub_velocity_node.dir/build
-.PHONY : pub_velocity_node/fast
-
-#=============================================================================
-# Target rules for targets named read_write_position_node
-
-# Build rule for target.
-read_write_position_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_position_node
-.PHONY : read_write_position_node
-
-# fast build rule for target.
-read_write_position_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_position_node.dir/build.make CMakeFiles/read_write_position_node.dir/build
-.PHONY : read_write_position_node/fast
-
-#=============================================================================
-# Target rules for targets named pub_position_node
-
-# Build rule for target.
-pub_position_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_position_node
-.PHONY : pub_position_node
-
-# fast build rule for target.
-pub_position_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/build
-.PHONY : pub_position_node/fast
-
-#=============================================================================
-# Target rules for targets named read_write_current_pos_v1_node
-
-# Build rule for target.
-read_write_current_pos_v1_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_current_pos_v1_node
-.PHONY : read_write_current_pos_v1_node
-
-# fast build rule for target.
-read_write_current_pos_v1_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v1_node.dir/build.make CMakeFiles/read_write_current_pos_v1_node.dir/build
-.PHONY : read_write_current_pos_v1_node/fast
-
-#=============================================================================
-# Target rules for targets named pub_current_pos_v1_node
-
-# Build rule for target.
-pub_current_pos_v1_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_current_pos_v1_node
-.PHONY : pub_current_pos_v1_node
-
-# fast build rule for target.
-pub_current_pos_v1_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v1_node.dir/build.make CMakeFiles/pub_current_pos_v1_node.dir/build
-.PHONY : pub_current_pos_v1_node/fast
-
-#=============================================================================
-# Target rules for targets named read_write_current_pos_v2_node
-
-# Build rule for target.
-read_write_current_pos_v2_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_write_current_pos_v2_node
-.PHONY : read_write_current_pos_v2_node
-
-# fast build rule for target.
-read_write_current_pos_v2_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v2_node.dir/build.make CMakeFiles/read_write_current_pos_v2_node.dir/build
-.PHONY : read_write_current_pos_v2_node/fast
-
-#=============================================================================
-# Target rules for targets named pub_current_pos_v2_node
-
-# Build rule for target.
-pub_current_pos_v2_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_current_pos_v2_node
-.PHONY : pub_current_pos_v2_node
-
-# fast build rule for target.
-pub_current_pos_v2_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v2_node.dir/build.make CMakeFiles/pub_current_pos_v2_node.dir/build
-.PHONY : pub_current_pos_v2_node/fast
-
-src/pub_current_node.o: src/pub_current_node.cpp.o
-.PHONY : src/pub_current_node.o
+src/read_write_node.o: src/read_write_node.cpp.o
+.PHONY : src/read_write_node.o
 
 # target to build an object file
-src/pub_current_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_node.dir/build.make CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o
-.PHONY : src/pub_current_node.cpp.o
+src/read_write_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o
+.PHONY : src/read_write_node.cpp.o
 
-src/pub_current_node.i: src/pub_current_node.cpp.i
-.PHONY : src/pub_current_node.i
-
-# target to preprocess a source file
-src/pub_current_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_node.dir/build.make CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.i
-.PHONY : src/pub_current_node.cpp.i
-
-src/pub_current_node.s: src/pub_current_node.cpp.s
-.PHONY : src/pub_current_node.s
-
-# target to generate assembly for a file
-src/pub_current_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_node.dir/build.make CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.s
-.PHONY : src/pub_current_node.cpp.s
-
-src/pub_current_pos_v1_node.o: src/pub_current_pos_v1_node.cpp.o
-.PHONY : src/pub_current_pos_v1_node.o
-
-# target to build an object file
-src/pub_current_pos_v1_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v1_node.dir/build.make CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.o
-.PHONY : src/pub_current_pos_v1_node.cpp.o
-
-src/pub_current_pos_v1_node.i: src/pub_current_pos_v1_node.cpp.i
-.PHONY : src/pub_current_pos_v1_node.i
+src/read_write_node.i: src/read_write_node.cpp.i
+.PHONY : src/read_write_node.i
 
 # target to preprocess a source file
-src/pub_current_pos_v1_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v1_node.dir/build.make CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.i
-.PHONY : src/pub_current_pos_v1_node.cpp.i
+src/read_write_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/src/read_write_node.cpp.i
+.PHONY : src/read_write_node.cpp.i
 
-src/pub_current_pos_v1_node.s: src/pub_current_pos_v1_node.cpp.s
-.PHONY : src/pub_current_pos_v1_node.s
-
-# target to generate assembly for a file
-src/pub_current_pos_v1_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v1_node.dir/build.make CMakeFiles/pub_current_pos_v1_node.dir/src/pub_current_pos_v1_node.cpp.s
-.PHONY : src/pub_current_pos_v1_node.cpp.s
-
-src/pub_current_pos_v2_node.o: src/pub_current_pos_v2_node.cpp.o
-.PHONY : src/pub_current_pos_v2_node.o
-
-# target to build an object file
-src/pub_current_pos_v2_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v2_node.dir/build.make CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.o
-.PHONY : src/pub_current_pos_v2_node.cpp.o
-
-src/pub_current_pos_v2_node.i: src/pub_current_pos_v2_node.cpp.i
-.PHONY : src/pub_current_pos_v2_node.i
-
-# target to preprocess a source file
-src/pub_current_pos_v2_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v2_node.dir/build.make CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.i
-.PHONY : src/pub_current_pos_v2_node.cpp.i
-
-src/pub_current_pos_v2_node.s: src/pub_current_pos_v2_node.cpp.s
-.PHONY : src/pub_current_pos_v2_node.s
+src/read_write_node.s: src/read_write_node.cpp.s
+.PHONY : src/read_write_node.s
 
 # target to generate assembly for a file
-src/pub_current_pos_v2_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_current_pos_v2_node.dir/build.make CMakeFiles/pub_current_pos_v2_node.dir/src/pub_current_pos_v2_node.cpp.s
-.PHONY : src/pub_current_pos_v2_node.cpp.s
-
-src/pub_position_node.o: src/pub_position_node.cpp.o
-.PHONY : src/pub_position_node.o
-
-# target to build an object file
-src/pub_position_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.o
-.PHONY : src/pub_position_node.cpp.o
-
-src/pub_position_node.i: src/pub_position_node.cpp.i
-.PHONY : src/pub_position_node.i
-
-# target to preprocess a source file
-src/pub_position_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.i
-.PHONY : src/pub_position_node.cpp.i
-
-src/pub_position_node.s: src/pub_position_node.cpp.s
-.PHONY : src/pub_position_node.s
-
-# target to generate assembly for a file
-src/pub_position_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_position_node.dir/build.make CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.s
-.PHONY : src/pub_position_node.cpp.s
-
-src/pub_velocity_node.o: src/pub_velocity_node.cpp.o
-.PHONY : src/pub_velocity_node.o
-
-# target to build an object file
-src/pub_velocity_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_velocity_node.dir/build.make CMakeFiles/pub_velocity_node.dir/src/pub_velocity_node.cpp.o
-.PHONY : src/pub_velocity_node.cpp.o
-
-src/pub_velocity_node.i: src/pub_velocity_node.cpp.i
-.PHONY : src/pub_velocity_node.i
-
-# target to preprocess a source file
-src/pub_velocity_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_velocity_node.dir/build.make CMakeFiles/pub_velocity_node.dir/src/pub_velocity_node.cpp.i
-.PHONY : src/pub_velocity_node.cpp.i
-
-src/pub_velocity_node.s: src/pub_velocity_node.cpp.s
-.PHONY : src/pub_velocity_node.s
-
-# target to generate assembly for a file
-src/pub_velocity_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_velocity_node.dir/build.make CMakeFiles/pub_velocity_node.dir/src/pub_velocity_node.cpp.s
-.PHONY : src/pub_velocity_node.cpp.s
-
-src/read_write_current_node.o: src/read_write_current_node.cpp.o
-.PHONY : src/read_write_current_node.o
-
-# target to build an object file
-src/read_write_current_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_node.dir/build.make CMakeFiles/read_write_current_node.dir/src/read_write_current_node.cpp.o
-.PHONY : src/read_write_current_node.cpp.o
-
-src/read_write_current_node.i: src/read_write_current_node.cpp.i
-.PHONY : src/read_write_current_node.i
-
-# target to preprocess a source file
-src/read_write_current_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_node.dir/build.make CMakeFiles/read_write_current_node.dir/src/read_write_current_node.cpp.i
-.PHONY : src/read_write_current_node.cpp.i
-
-src/read_write_current_node.s: src/read_write_current_node.cpp.s
-.PHONY : src/read_write_current_node.s
-
-# target to generate assembly for a file
-src/read_write_current_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_node.dir/build.make CMakeFiles/read_write_current_node.dir/src/read_write_current_node.cpp.s
-.PHONY : src/read_write_current_node.cpp.s
-
-src/read_write_current_pos_v1_node.o: src/read_write_current_pos_v1_node.cpp.o
-.PHONY : src/read_write_current_pos_v1_node.o
-
-# target to build an object file
-src/read_write_current_pos_v1_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v1_node.dir/build.make CMakeFiles/read_write_current_pos_v1_node.dir/src/read_write_current_pos_v1_node.cpp.o
-.PHONY : src/read_write_current_pos_v1_node.cpp.o
-
-src/read_write_current_pos_v1_node.i: src/read_write_current_pos_v1_node.cpp.i
-.PHONY : src/read_write_current_pos_v1_node.i
-
-# target to preprocess a source file
-src/read_write_current_pos_v1_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v1_node.dir/build.make CMakeFiles/read_write_current_pos_v1_node.dir/src/read_write_current_pos_v1_node.cpp.i
-.PHONY : src/read_write_current_pos_v1_node.cpp.i
-
-src/read_write_current_pos_v1_node.s: src/read_write_current_pos_v1_node.cpp.s
-.PHONY : src/read_write_current_pos_v1_node.s
-
-# target to generate assembly for a file
-src/read_write_current_pos_v1_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v1_node.dir/build.make CMakeFiles/read_write_current_pos_v1_node.dir/src/read_write_current_pos_v1_node.cpp.s
-.PHONY : src/read_write_current_pos_v1_node.cpp.s
-
-src/read_write_current_pos_v2_node.o: src/read_write_current_pos_v2_node.cpp.o
-.PHONY : src/read_write_current_pos_v2_node.o
-
-# target to build an object file
-src/read_write_current_pos_v2_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v2_node.dir/build.make CMakeFiles/read_write_current_pos_v2_node.dir/src/read_write_current_pos_v2_node.cpp.o
-.PHONY : src/read_write_current_pos_v2_node.cpp.o
-
-src/read_write_current_pos_v2_node.i: src/read_write_current_pos_v2_node.cpp.i
-.PHONY : src/read_write_current_pos_v2_node.i
-
-# target to preprocess a source file
-src/read_write_current_pos_v2_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v2_node.dir/build.make CMakeFiles/read_write_current_pos_v2_node.dir/src/read_write_current_pos_v2_node.cpp.i
-.PHONY : src/read_write_current_pos_v2_node.cpp.i
-
-src/read_write_current_pos_v2_node.s: src/read_write_current_pos_v2_node.cpp.s
-.PHONY : src/read_write_current_pos_v2_node.s
-
-# target to generate assembly for a file
-src/read_write_current_pos_v2_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_current_pos_v2_node.dir/build.make CMakeFiles/read_write_current_pos_v2_node.dir/src/read_write_current_pos_v2_node.cpp.s
-.PHONY : src/read_write_current_pos_v2_node.cpp.s
-
-src/read_write_position_node.o: src/read_write_position_node.cpp.o
-.PHONY : src/read_write_position_node.o
-
-# target to build an object file
-src/read_write_position_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_position_node.dir/build.make CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.o
-.PHONY : src/read_write_position_node.cpp.o
-
-src/read_write_position_node.i: src/read_write_position_node.cpp.i
-.PHONY : src/read_write_position_node.i
-
-# target to preprocess a source file
-src/read_write_position_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_position_node.dir/build.make CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.i
-.PHONY : src/read_write_position_node.cpp.i
-
-src/read_write_position_node.s: src/read_write_position_node.cpp.s
-.PHONY : src/read_write_position_node.s
-
-# target to generate assembly for a file
-src/read_write_position_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_position_node.dir/build.make CMakeFiles/read_write_position_node.dir/src/read_write_position_node.cpp.s
-.PHONY : src/read_write_position_node.cpp.s
-
-src/read_write_velocity_node.o: src/read_write_velocity_node.cpp.o
-.PHONY : src/read_write_velocity_node.o
-
-# target to build an object file
-src/read_write_velocity_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_velocity_node.dir/build.make CMakeFiles/read_write_velocity_node.dir/src/read_write_velocity_node.cpp.o
-.PHONY : src/read_write_velocity_node.cpp.o
-
-src/read_write_velocity_node.i: src/read_write_velocity_node.cpp.i
-.PHONY : src/read_write_velocity_node.i
-
-# target to preprocess a source file
-src/read_write_velocity_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_velocity_node.dir/build.make CMakeFiles/read_write_velocity_node.dir/src/read_write_velocity_node.cpp.i
-.PHONY : src/read_write_velocity_node.cpp.i
-
-src/read_write_velocity_node.s: src/read_write_velocity_node.cpp.s
-.PHONY : src/read_write_velocity_node.s
-
-# target to generate assembly for a file
-src/read_write_velocity_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_velocity_node.dir/build.make CMakeFiles/read_write_velocity_node.dir/src/read_write_velocity_node.cpp.s
-.PHONY : src/read_write_velocity_node.cpp.s
+src/read_write_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/src/read_write_node.cpp.s
+.PHONY : src/read_write_node.cpp.s
 
 # Help Target
 help:
@@ -582,46 +249,10 @@ help:
 	@echo "... test"
 	@echo "... dynamixel_sdk_examples_uninstall"
 	@echo "... uninstall"
-	@echo "... pub_current_node"
-	@echo "... pub_current_pos_v1_node"
-	@echo "... pub_current_pos_v2_node"
-	@echo "... pub_position_node"
-	@echo "... pub_velocity_node"
-	@echo "... read_write_current_node"
-	@echo "... read_write_current_pos_v1_node"
-	@echo "... read_write_current_pos_v2_node"
-	@echo "... read_write_position_node"
-	@echo "... read_write_velocity_node"
-	@echo "... src/pub_current_node.o"
-	@echo "... src/pub_current_node.i"
-	@echo "... src/pub_current_node.s"
-	@echo "... src/pub_current_pos_v1_node.o"
-	@echo "... src/pub_current_pos_v1_node.i"
-	@echo "... src/pub_current_pos_v1_node.s"
-	@echo "... src/pub_current_pos_v2_node.o"
-	@echo "... src/pub_current_pos_v2_node.i"
-	@echo "... src/pub_current_pos_v2_node.s"
-	@echo "... src/pub_position_node.o"
-	@echo "... src/pub_position_node.i"
-	@echo "... src/pub_position_node.s"
-	@echo "... src/pub_velocity_node.o"
-	@echo "... src/pub_velocity_node.i"
-	@echo "... src/pub_velocity_node.s"
-	@echo "... src/read_write_current_node.o"
-	@echo "... src/read_write_current_node.i"
-	@echo "... src/read_write_current_node.s"
-	@echo "... src/read_write_current_pos_v1_node.o"
-	@echo "... src/read_write_current_pos_v1_node.i"
-	@echo "... src/read_write_current_pos_v1_node.s"
-	@echo "... src/read_write_current_pos_v2_node.o"
-	@echo "... src/read_write_current_pos_v2_node.i"
-	@echo "... src/read_write_current_pos_v2_node.s"
-	@echo "... src/read_write_position_node.o"
-	@echo "... src/read_write_position_node.i"
-	@echo "... src/read_write_position_node.s"
-	@echo "... src/read_write_velocity_node.o"
-	@echo "... src/read_write_velocity_node.i"
-	@echo "... src/read_write_velocity_node.s"
+	@echo "... read_write_node"
+	@echo "... src/read_write_node.o"
+	@echo "... src/read_write_node.i"
+	@echo "... src/read_write_node.s"
 .PHONY : help
 
 

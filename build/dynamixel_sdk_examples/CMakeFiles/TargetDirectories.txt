@@ -1,15 +1,6 @@
 /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/uninstall.dir
 /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_uninstall.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_current_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/pub_current_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_velocity_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/pub_velocity_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_position_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/pub_position_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_current_pos_v1_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/pub_current_pos_v1_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_current_pos_v2_node.dir
-/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/pub_current_pos_v2_node.dir
+/home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/read_write_node.dir
 /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/test.dir
 /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/edit_cache.dir
 /home/tky/workspace/openarm_ws/build/dynamixel_sdk_examples/CMakeFiles/rebuild_cache.dir

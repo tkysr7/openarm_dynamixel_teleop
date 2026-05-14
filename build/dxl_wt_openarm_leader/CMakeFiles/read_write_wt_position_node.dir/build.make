@@ -98,6 +98,7 @@ read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sd
 read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
 read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
 read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so
+read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
 read_write_wt_position_node: /opt/ros/humble/lib/librclcpp_action.so
 read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so
 read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -105,7 +106,6 @@ read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesup
 read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so
 read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_cpp.so
 read_write_wt_position_node: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_py.so
-read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
 read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
 read_write_wt_position_node: /home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
 read_write_wt_position_node: /opt/ros/humble/lib/librclcpp.so

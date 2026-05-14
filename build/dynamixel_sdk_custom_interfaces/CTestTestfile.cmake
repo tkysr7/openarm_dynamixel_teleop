@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
+# Source directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 # Build directory: /home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces
 # 
 # This file includes the relevant testing commands required for 

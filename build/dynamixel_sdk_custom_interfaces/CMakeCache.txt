@@ -331,7 +331,7 @@ dynamixel_sdk_custom_interfaces_BINARY_DIR:STATIC=/home/tky/workspace/openarm_ws
 dynamixel_sdk_custom_interfaces_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-dynamixel_sdk_custom_interfaces_SOURCE_DIR:STATIC=/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
+dynamixel_sdk_custom_interfaces_SOURCE_DIR:STATIC=/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 
 //Dependencies for the target
 dynamixel_sdk_custom_interfaces__rosidl_generator_c_LIB_DEPENDS:STATIC=general;builtin_interfaces::builtin_interfaces__rosidl_generator_c;general;rosidl_runtime_c::rosidl_runtime_c;general;rcutils::rcutils;
@@ -517,7 +517,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

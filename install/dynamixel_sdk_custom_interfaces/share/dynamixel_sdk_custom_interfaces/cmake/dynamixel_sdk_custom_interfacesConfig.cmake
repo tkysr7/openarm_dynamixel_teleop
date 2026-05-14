@@ -16,7 +16,7 @@ set(_dynamixel_sdk_custom_interfaces_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT dynamixel_sdk_custom_interfaces_FIND_QUIETLY)
-  message(STATUS "Found dynamixel_sdk_custom_interfaces: 3.7.60 (${dynamixel_sdk_custom_interfaces_DIR})")
+  message(STATUS "Found dynamixel_sdk_custom_interfaces: 4.0.5 (${dynamixel_sdk_custom_interfaces_DIR})")
 endif()
 
 # warn when using a deprecated package

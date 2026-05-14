@@ -16,7 +16,7 @@ set(_dynamixel_sdk_examples_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT dynamixel_sdk_examples_FIND_QUIETLY)
-  message(STATUS "Found dynamixel_sdk_examples: 3.7.60 (${dynamixel_sdk_examples_DIR})")
+  message(STATUS "Found dynamixel_sdk_examples: 4.0.5 (${dynamixel_sdk_examples_DIR})")
 endif()
 
 # warn when using a deprecated package

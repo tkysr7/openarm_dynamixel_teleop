@@ -1,13 +1,5 @@
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_velocity_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_velocity_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_position_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_position_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_pos_v1_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_pos_v1_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_current_pos_v2_node
-/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/pub_current_pos_v2_node
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node
+/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node.py
 /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
 /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
 /home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh

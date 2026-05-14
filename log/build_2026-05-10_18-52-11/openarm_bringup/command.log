@@ -1,4 +1,0 @@
-Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bringup -- -j12 -l12
-Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/openarm_bringup -- -j12 -l12
-Invoking command in '/home/tky/workspace/openarm_ws/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bringup
-Invoked command in '/home/tky/workspace/openarm_ws/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/openarm_bringup

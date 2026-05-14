@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target pub_current_node[0m
-[ 33%] Built target pub_position_node
-[ 50%] [32mBuilding CXX object CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o[0m
-[ 83%] Built target read_write_wt_position_node

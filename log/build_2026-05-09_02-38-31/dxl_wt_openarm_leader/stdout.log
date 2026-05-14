@@ -1,7 +1,0 @@
-[ 16%] [32mBuilding CXX object CMakeFiles/pub_position_node.dir/src/pub_position_node.cpp.o[0m
-[ 50%] Built target read_write_wt_position_node
-[ 66%] [32mBuilding CXX object CMakeFiles/pub_current_node.dir/src/pub_current_node.cpp.o[0m
-[ 83%] [32m[1mLinking CXX executable pub_position_node[0m
-[100%] [32m[1mLinking CXX executable pub_current_node[0m
-[100%] Built target pub_position_node
-[100%] Built target pub_current_node

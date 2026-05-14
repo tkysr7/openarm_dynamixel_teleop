@@ -1,50 +1,24 @@
 ISSUE TEMPLATE ver. 1.2.0
 
-Please **search for similar issues first** with a specific keyword in your error message.  
-Any redundant issue thread may be redirected and closed without prior notice.
+Please fill this template for more accurate and prompt support.
 
-1. Please specify the version of DYNAMIXEL SDK
+1. Which DYNAMIXEL SDK version do you use?
+  - ex) `3.4.1`
 
+2. Which programming language/tool do you use?
+  - ex) `C`, `C++`, `C#`, `Python`, `Java`, `MATLAB`, `LABVIEW`, `ROS`, `Arduino`, etc
 
+3. Which operating system do you use?
+  - ex) `Ubuntu 16.04`, `Windows 10`, `OS X 10.14`
 
-2. Please specify the programming language
-- [ ] C
-- [ ] C++
-- [ ] C#
-- [ ] Python
-- [ ] Java
-- [ ] MATLAB
-- [ ] LabVIEW
-- [ ] ROS
-- [ ] etc (specify here)
+3. Which USB serial converter do you use?
+  - ex) `USB2Dynamixel`, `U2D2`, `OpenCM904`, `OpenCR`, etc
 
-3. Please specify the DYNAMIXEL model
+4. Which DYNAMIXEL do you use?
+  - ex) `MX-28(2.0)`, `AX-12W`, `XM430-W250`, etc.
 
+5. Have you searched the issue from the closed issue threads?
 
+6. Please describe the issue in detail
 
-4. Please specify the communication interface
-- [ ] None
-- [ ] U2D2
-- [ ] OpenCR + usb_to_dxl firmware
-- [ ] OpenCM9.04
-- [ ] OpenRB-150
-- [ ] etc (specify here)
-
-
-5. Please specify the OS
-- [ ] None
-- [ ] Windows
-- [ ] Mac OS
-- [ ] Linux
-- [ ] etc (specify here)
-
-6. Please specify the controller
-- [ ] PC / Laptop
-- [ ] Embedded SBC (Raspberry Pi, Jetson, etc)
-- [ ] etc (specify here)
-
-7. Please describe the issue in detail.
-
-
-
-8. How this issue can be resolved?
+7. How can we reproduce the issue?

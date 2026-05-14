@@ -1,4 +1,4 @@
-# Install script for directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
+# Install script for directory: /home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -248,7 +248,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.10.egg-info" TYPE DIRECTORY FILES "/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.10.egg-info" TYPE DIRECTORY FILES "/home/tky/workspace/openarm_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -368,15 +368,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/msg" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/msg" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/msg" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/msg" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/srv" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces/srv" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -639,7 +639,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_custom_interfaces" TYPE FILE FILES "/home/tky/workspace/openarm_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
