@@ -1,0 +1,7 @@
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:239:15: warning: unused variable ‘current_raw’ [-Wunused-variable]
+  239 |       int16_t current_raw = static_cast<int16_t>(
+      |               ^~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:243:15: warning: unused variable ‘velocity_raw’ [-Wunused-variable]
+  243 |       int32_t velocity_raw = static_cast<int32_t>(
+      |               ^~~~~~~~~~~~

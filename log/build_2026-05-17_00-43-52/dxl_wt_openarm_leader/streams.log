@@ -1,0 +1,36 @@
+[0.017s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.129s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.136s] [ 50%] Built target pub_current_node
+[0.148s] [ 75%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.461s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::motion_compensation()’:
+[2.461s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:165:12: warning: unused variable ‘tau_imp’ [-Wunused-variable]
+[2.462s]   165 |     double tau_imp = (Kp_[dxl_id-1] * (target_imp_pos_[dxl_id-1] -present_position_[dxl_id-1] )
+[2.462s]       |            ^~~~~~~
+[2.462s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.462s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:207:35: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘txRxPacket’
+[2.462s]   207 |   int result = groupfastsyncread_.txRxPacket();
+[2.462s]       |                                   ^~~~~~~~~~
+[2.462s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:218:29: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘isAvailable’
+[2.462s]   218 |     if (!groupfastsyncread_.isAvailable(id, ADDR_PRESENT_STATUS, LEN_PRESENT_STATUS)) {
+[2.463s]       |                             ^~~~~~~~~~~
+[2.463s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:221:34: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘getError’
+[2.463s]   221 |     }else if (groupfastsyncread_.getError(id, &error)&& error !=0) {
+[2.463s]       |                                  ^~~~~~~~
+[2.463s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:226:70: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘getData’
+[2.463s]   226 |       int32_t position_raw = static_cast<int32_t>(groupfastsyncread_.getData(id, ADDR_PRESENT_POSITION, 4));
+[2.463s]       |                                                                      ^~~~~~~
+[2.463s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:275:28: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘getData’
+[2.463s]   275 |         groupfastsyncread_.getData(id, ADDR_PRESENT_VELOCITY, 4)
+[2.464s]       |                            ^~~~~~~
+[2.464s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:293:69: error: ‘class std::unique_ptr<dynamixel::GroupFastSyncRead>’ has no member named ‘getData’
+[2.464s]   293 |       int16_t current_raw = static_cast<int16_t>(groupfastsyncread_.getData(id, ADDR_PRESENT_CURRENT, 2));
+[2.464s]       |                                                                     ^~~~~~~
+[2.478s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In constructor ‘ReadWriteWTNode::ReadWriteWTNode()’:
+[2.478s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:384:10: error: ‘group_fast_sync_read_’ was not declared in this scope; did you mean ‘groupfastsyncread_’?
+[2.478s]   384 |     if (!group_fast_sync_read_->addParam(id)) {
+[2.478s]       |          ^~~~~~~~~~~~~~~~~~~~~
+[2.478s]       |          groupfastsyncread_
+[5.147s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.147s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.148s] gmake: *** [Makefile:146: all] Error 2
+[5.149s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

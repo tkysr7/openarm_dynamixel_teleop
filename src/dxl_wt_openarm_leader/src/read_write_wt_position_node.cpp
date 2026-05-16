@@ -63,8 +63,9 @@
 #define ADDR_PRESENT_VELOCITY			128
 #define ADDR_PRESENT_POSITION			132
 //For Group fast sync read
-#define ADDR_PRESENT_STATUS      ADDR_PRESENT_CURRENT
-#define LEN_PRESENT_STATUS       10
+#define ADDR_PRESENT_STATUS       ADDR_PRESENT_CURRENT
+#define LEN_PRESENT_STATUS        10
+#define LEN_GOAL_CURRENT          2
 
 /* Motors ID */
 #define DXL1_ID                         1
@@ -169,8 +170,8 @@ void ReadWriteWTNode::motion_compensation()
 
 
     //Compensation TORQUE
-    // double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f +tau_imp; //Enable Impedance control
-    double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f; //disable Impedance control
+    double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f +tau_imp; //Enable Impedance control
+    // double tau_cmd = J_[dxl_id-1] * present_acc_rad_ss_[dxl_id-1] + tau_f; //disable Impedance control
     goal_current_mA =  static_cast<int>((tau_cmd / kt_) * 1000);
     goal_current_mA = std::clamp(goal_current_mA, -current_limit_mA_, current_limit_mA_);
 
@@ -178,20 +179,24 @@ void ReadWriteWTNode::motion_compensation()
     RCLCPP_INFO(this->get_logger(), "ID %d: cur: %d vel: %.3f tau_f: %.3f tau_imp: %.3f pos: %d dt: %d",
                  dxl_id, goal_current_mA, present_vel_rad_s_[dxl_id -1],tau_f, tau_imp,present_position_[dxl_id-1], read_period_ms_);
 
-    dxl_comm_result = packetHandler->write2ByteTxRx(
-      portHandler,
-      dxl_id,
-      ADDR_GOAL_CURRENT,
-      static_cast<uint16_t>(goal_current_mA),
-      &dxl_error
-    );
 
-    if (dxl_comm_result != COMM_SUCCESS) {
-      RCLCPP_INFO(this->get_logger(), "ID %d: %s", dxl_id, packetHandler->getTxRxResult(dxl_comm_result));
-    } else if (dxl_error != 0) {
-      RCLCPP_INFO(this->get_logger(), "ID %d: %s", dxl_id, packetHandler->getRxPacketError(dxl_error));
+    uint8_t param_goal_current[2];
+    const auto goal_current_raw = static_cast<uint16_t>(goal_current_mA);
+
+    param_goal_current[0] = DXL_LOBYTE(goal_current_raw);
+    param_goal_current[1] = DXL_HIBYTE(goal_current_raw);
+
+    if (!group_sync_write_current_->addParam(dxl_id, param_goal_current)) {
+      RCLCPP_INFO(this->get_logger(), "ID %d: GroupSyncWrite addParam failed", dxl_id);
     }
+
   }
+
+  dxl_comm_result = group_sync_write_current_->txPacket();
+  if (dxl_comm_result != COMM_SUCCESS) {
+    RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(dxl_comm_result)); 
+  }
+  group_sync_write_current_->clearParam();
 
 }
 
@@ -204,156 +209,105 @@ void ReadWriteWTNode::read_present_position()
   std_msgs::msg::Float64MultiArray openarm_msg;
   openarm_msg.data.resize(14, 0.0);
 
-  for (size_t i = 0; i < dxl_ids_ .size(); ++i) {
+  int result = groupfastsyncread_->txRxPacket();
+  if (result != COMM_SUCCESS) {
+    RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(result));
+    return;
+  }
 
-    dxl_comm_result = packetHandler->read4ByteTxRx(
-      portHandler,
-      dxl_ids_[i],
-      ADDR_PRESENT_POSITION,
-    reinterpret_cast<uint32_t *>(&present_position_[dxl_ids_[i]-1]),
-    &dxl_error
-    );
+  for (size_t i = 0; i < dxl_ids_.size(); ++i) {
+    
+    const auto id = dxl_ids_[i];
+    uint8_t error = 0;
 
-    if (dxl_comm_result != COMM_SUCCESS) {
+    if (!groupfastsyncread_->isAvailable(id, ADDR_PRESENT_STATUS, LEN_PRESENT_STATUS)) {
+      RCLCPP_INFO(this->get_logger(), "fast isAvailable ID %d: data unavailable", id);
+      continue;
+    }else if (groupfastsyncread_->getError(id, &error)&& error !=0) {
+      RCLCPP_INFO(this->get_logger(), "fast getError ID %d: %s", id, packetHandler->getRxPacketError(error));
+      continue;
+    }else{
+      
+      int32_t position_raw = static_cast<int32_t>(groupfastsyncread_->getData(id, ADDR_PRESENT_POSITION, 4));
+      present_position_[id-1] = position_raw;
+
+      if (id==15){
+
+        double normalized = std::clamp(static_cast<double>(position_raw) / 4095.0, 0.0, 1.0);
+        double gripper_position = normalized * 0.04;
+        send_left_gripper_goal(gripper_position);
+
         RCLCPP_INFO(
           this->get_logger(),
-          "ID %d: %s",
-          dxl_ids_[i],
-          packetHandler->getTxRxResult(dxl_comm_result)
+          "DXL ID: %d Present: %d -> Gripper: %.3f",
+          id,
+          position_raw,
+          gripper_position
         );
-    } else if (dxl_error != 0) {
-        RCLCPP_INFO(
-          this->get_logger(),
-          "ID %d: %s",
-          dxl_ids_[i],
-          packetHandler->getRxPacketError(dxl_error)
-        );
-    } else {
-      if (dxl_ids_[i]==15){
-          double normalized =
-            std::clamp(static_cast<double>(present_position_[dxl_ids_[i]-1]) / 4095.0, 0.0, 1.0);
-
-          double gripper_position = normalized * 0.04;
-          send_left_gripper_goal(gripper_position);
-
-          RCLCPP_INFO(
-            this->get_logger(),
-            "DXL ID: %d Present: %d -> Gripper: %.3f",
-            dxl_ids_[i],
-            present_position_[dxl_ids_[i]],
-            gripper_position
-          );
 
       } else if (dxl_ids_ [i]==16) {
-          double normalized =
-            std::clamp(static_cast<double>(present_position_[dxl_ids_[i]-1]) / 4095.0, 0.0, 1.0);
 
-          double gripper_position = normalized * 0.04;
-          send_right_gripper_goal(gripper_position);
+        double normalized = std::clamp(static_cast<double>(position_raw) / 4095.0, 0.0, 1.0);
+        double gripper_position = normalized * 0.04;
+        send_right_gripper_goal(gripper_position);
 
-          RCLCPP_INFO(
-            this->get_logger(),
-            "DXL ID: %d Present: %d -> Gripper: %.3f",
-            dxl_ids_[i],
-            present_position_[dxl_ids_[i]-1],
-            gripper_position
-          );
+        // RCLCPP_INFO(
+        //   this->get_logger(),
+        //   "DXL ID: %d Present: %d -> Gripper: %.3f",
+        //   id,
+        //   position_raw,
+        //   gripper_position
+        // );
 
       } else {
 
-        // 追加: DXLのPresent Positionをradに変換
-        double joint_rad =
-          (static_cast<double>(present_position_[dxl_ids_[i]-1]) - 2048.0) * 2.0 * M_PI / 4096.0;
+        double joint_rad = (static_cast<double>(position_raw) - 2048.0) * 2.0 * M_PI / 4096.0;
         openarm_msg.data[i] = joint_rad;
 
-        RCLCPP_INFO(
-          this->get_logger(),
-          "DXL ID: %d Present: %d -> joint%zu: %.3f rad",
-          dxl_ids_[i],
-          present_position_[dxl_ids_[i]-1],
-          i + 1,
-          joint_rad
-        );
-      }
-    }
-    // Position Value of X series is 4 byte data. For AX & MX(1.0) use 2 byte data(int16_t) for the Position Value.
-    int32_t present_velocity_raw = 0;
-    // Read Present Velocity (length : 4 bytes) and Convert uint32 -> int32
-    // When reading 2 byte data from AX / MX(1.0), use read2ByteTxRx() instead.
-    dxl_comm_result = packetHandler->read4ByteTxRx(
-      portHandler,
-      dxl_ids_ [i],
-      ADDR_PRESENT_VELOCITY,
-      (uint32_t *)&present_velocity_raw,
-      &dxl_error
-    );
+        // RCLCPP_INFO(
+        //   this->get_logger(),
+        //   "DXL ID: %d Present: %d -> joint%zu: %.3f rad",
+        //   id,
+        //   position_raw,
+        //   i + 1,
+        //   joint_rad
+        // );
 
-    if (dxl_comm_result != COMM_SUCCESS) {
-      RCLCPP_INFO(
-        this->get_logger(),
-        "ID %d: %s",
-        dxl_ids_[i],
-        packetHandler->getTxRxResult(dxl_comm_result)
+      }
+    
+      //GET velocity val
+      int32_t velocity_raw = static_cast<int32_t>(
+        groupfastsyncread_->getData(id, ADDR_PRESENT_VELOCITY, 4)
       );
-    } else if (dxl_error != 0) {
-      RCLCPP_INFO(
-        this->get_logger(),
-        "ID %d: %s",
-        dxl_ids_[i],
-        packetHandler->getRxPacketError(dxl_error)
-      );
-    } else{
-      prev_vel_rad_s_[dxl_ids_[i]-1] = present_vel_rad_s_[dxl_ids_ [i]-1];
-      present_vel_rad_s_[dxl_ids_[i]-1] = static_cast<double>(present_velocity_raw) * 0.229 * (2.0 * M_PI / 60.0);
-      present_acc_rad_ss_[dxl_ids_[i]-1] = (present_vel_rad_s_[dxl_ids_[i]-1] -prev_vel_rad_s_[dxl_ids_[i]-1]) / read_period_sec_;
+
+      prev_vel_rad_s_[id-1] = present_vel_rad_s_[dxl_ids_ [i]-1];
+      present_vel_rad_s_[id-1] = static_cast<double>(velocity_raw) * 0.229 * (2.0 * M_PI / 60.0);
+      present_acc_rad_ss_[id-1] = (present_vel_rad_s_[id-1] -prev_vel_rad_s_[id-1]) / read_period_sec_;
 
       // RCLCPP_INFO(
       //   this->get_logger(),
       //   "getVelocity : [ID:%d] -> [VEL_raw:%d],[pres_VEL:%.3f],[prev_VEL:%.3f],[ACC:%.3f]",
-      //   dxl_ids_[i],
-      //   present_velocity_raw,
-      //   present_vel_rad_s_[dxl_ids_ [i]-1],
-      //   prev_vel_rad_s_[dxl_ids_ [i]-1],
-      //   present_acc_rad_ss_[dxl_ids_ [i]-1]
+      //   id,
+      //   velocity_raw,
+      //   present_vel_rad_s_[id-1],
+      //   prev_vel_rad_s_[id-1],
+      //   present_acc_rad_ss_[id-1]
       // );
-    }
 
-    int16_t present_current_raw = 0;
-    // Read Present Velocity (length : 4 bytes) and Convert uint32 -> int32
-    // When reading 2 byte data from AX / MX(1.0), use read2ByteTxRx() instead.
-    dxl_comm_result = packetHandler->read2ByteTxRx(
-      portHandler,
-      dxl_ids_[i],
-      ADDR_PRESENT_CURRENT,
-      (uint16_t *)&present_current_raw,
-      &dxl_error
-    );
-
-    if (dxl_comm_result != COMM_SUCCESS) {
-      RCLCPP_INFO(
-        this->get_logger(),
-        "ID %d: %s",
-        dxl_ids_[i],
-        packetHandler->getTxRxResult(dxl_comm_result)
-      );
-    } else if (dxl_error != 0) {
-      RCLCPP_INFO(
-        this->get_logger(),
-        "ID %d: %s",
-        dxl_ids_[i],
-        packetHandler->getRxPacketError(dxl_error)
-      );
-    } else{
-      present_current_mA_[dxl_ids_[i]-1] = present_current_raw;
+      //GET current val
+      int16_t current_raw = static_cast<int16_t>(groupfastsyncread_->getData(id, ADDR_PRESENT_CURRENT, 2));
+      present_current_mA_[id-1] = current_raw;
 
       // RCLCPP_INFO(
       //   this->get_logger(),
-      //   "getCurrent : [ID:%d] -> [Current_mA:%d]",
-      //   dxl_ids_[i],
-      //   present_current_mA_[dxl_ids_[i]-1]
+      //   "fast_getCurrent : [ID:%d] -> [Current_mA:%d]",
+      //   id,
+      //   current_raw
       // );
+    
     }
   }
+
 
   std_msgs::msg::Float64MultiArray left_msg;
     left_msg.data.assign(
@@ -384,7 +338,7 @@ void ReadWriteWTNode::read_present_position()
     cycle_us,
     static_cast<double>(cycle_us) / 1000.0,
     read_period_ms_
-);
+  );
 
 
 }
@@ -421,9 +375,29 @@ ReadWriteWTNode::ReadWriteWTNode()
       );
       continue;
     }
-
     dxl_ids_.push_back(static_cast<uint8_t>(id));
   }
+
+  groupfastsyncread_ = std::make_unique<dynamixel::GroupFastSyncRead>(
+    portHandler,
+    packetHandler,
+    ADDR_PRESENT_STATUS,
+    LEN_PRESENT_STATUS
+  );
+
+  for (const auto id : dxl_ids_) {
+    if (!groupfastsyncread_->addParam(id)) {
+      RCLCPP_ERROR(this->get_logger(), "ID %d: GroupFastSyncRead addParam failed", id);
+    }
+  }
+
+  group_sync_write_current_ = std::make_unique<dynamixel::GroupSyncWrite>(
+    portHandler,
+    packetHandler,
+    ADDR_GOAL_CURRENT,
+    LEN_GOAL_CURRENT
+  );
+
 
   auto load_double_array_parameter =
   [this](const std::string & name, std::array<double, 18> & target) {

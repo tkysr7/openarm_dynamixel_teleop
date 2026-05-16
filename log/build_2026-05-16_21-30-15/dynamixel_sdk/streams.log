@@ -1,0 +1,193 @@
+[0.037s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk -- -j12 -l12
+[0.177s] [  0%] Built target ament_cmake_python_copy_dynamixel_easy_sdk
+[0.185s] [100%] Built target dynamixel_sdk
+[0.199s] [100%] Built target ament_cmake_python_copy_dynamixel_sdk
+[0.645s] running egg_info
+[0.646s] writing dynamixel_sdk.egg-info/PKG-INFO
+[0.646s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[0.647s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[0.650s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[0.651s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[0.671s] running egg_info
+[0.672s] writing dynamixel_easy_sdk.egg-info/PKG-INFO
+[0.673s] writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+[0.673s] writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+[0.677s] reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[0.678s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[0.695s] [100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[0.713s] [100%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[0.726s] Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dynamixel_sdk -- -j12 -l12
+[0.728s] Invoking command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk
+[0.783s] -- Install configuration: ""
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include/
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[0.783s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[0.784s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[0.784s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[0.784s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[0.785s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[0.785s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[0.785s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+[0.786s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+[0.787s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+[0.788s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+[0.789s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+[0.790s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+[0.791s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+[0.792s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+[0.793s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[0.794s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-4.0.5-py3.10.egg-info
+[0.794s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-4.0.5-py3.10.egg-info/SOURCES.txt
+[0.795s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-4.0.5-py3.10.egg-info/dependency_links.txt
+[0.795s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-4.0.5-py3.10.egg-info/top_level.txt
+[0.795s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-4.0.5-py3.10.egg-info/PKG-INFO
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.cpp
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/__init__.py
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.cpp
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.py
+[0.795s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_arduino.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_linux.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_handler.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.py
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_mac.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.cpp
+[0.796s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_windows.cpp
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.py
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.py
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.py
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.py
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.cpp
+[0.800s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[0.801s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/robotis_def.py
+[0.801s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.py
+[0.801s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.py
+[0.801s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.cpp
+[0.850s] Listing '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk'...
+[0.854s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk-4.0.5-py3.10.egg-info
+[0.854s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk-4.0.5-py3.10.egg-info/SOURCES.txt
+[0.855s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk-4.0.5-py3.10.egg-info/dependency_links.txt
+[0.855s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk-4.0.5-py3.10.egg-info/top_level.txt
+[0.856s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk-4.0.5-py3.10.egg-info/PKG-INFO
+[0.856s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk
+[0.856s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/group_executor.py
+[0.857s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/__init__.py
+[0.857s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/data_types.py
+[0.857s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/control_table.cpp
+[0.857s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/connector.py
+[0.857s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/motor.cpp
+[0.858s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/group_executor.cpp
+[0.858s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/connector.cpp
+[0.858s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/control_table.py
+[0.858s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+[0.858s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/dynamixel_error.py
+[0.859s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk/motor.py
+[0.922s] Listing '/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_easy_sdk'...
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[0.935s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[0.936s] -- Installing: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[0.936s] -- Up-to-date: /home/tky/workspace/openarm_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[0.941s] Invoked command in '/home/tky/workspace/openarm_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/tky/.pyenv/shims/cmake --install /home/tky/workspace/openarm_ws/build/dynamixel_sdk

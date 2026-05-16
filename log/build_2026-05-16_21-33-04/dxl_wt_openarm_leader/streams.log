@@ -1,0 +1,40 @@
+[0.016s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.119s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.130s] [ 50%] Built target pub_current_node
+[0.135s] [ 75%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.368s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.368s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.369s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.369s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.369s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:251:5: error: cannot convert ‘std::__shared_ptr_access<rclcpp::Clock, __gnu_cxx::_S_atomic, false, false>::element_type’ {aka ‘rclcpp::Clock’} to ‘const char*’
+[2.369s]   251 |     *this->get_clock(),
+[2.369s]       |     ^~~~~~~~~~~~~~~~~~
+[2.369s]       |     |
+[2.369s]       |     std::__shared_ptr_access<rclcpp::Clock, __gnu_cxx::_S_atomic, false, false>::element_type {aka rclcpp::Clock}
+[2.369s] In file included from /opt/ros/humble/include/rmw/rmw/types.h:28,
+[2.369s]                  from /opt/ros/humble/include/rcl/rcl/types.h:20,
+[2.369s]                  from /opt/ros/humble/include/rcl/rcl/log_level.h:22,
+[2.369s]                  from /opt/ros/humble/include/rcl/rcl/arguments.h:21,
+[2.369s]                  from /opt/ros/humble/include/rcl/rcl/context.h:28,
+[2.369s]                  from /opt/ros/humble/include/rcl/rcl/guard_condition.h:26,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.369s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.369s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.369s] /opt/ros/humble/include/rcutils/rcutils/logging.h:479:16: note:   initializing argument 4 of ‘void rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)’
+[2.370s]   479 |   const char * format,
+[2.370s]       |   ~~~~~~~~~~~~~^~~~~~
+[4.945s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[4.946s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[4.946s] gmake: *** [Makefile:146: all] Error 2
+[4.947s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

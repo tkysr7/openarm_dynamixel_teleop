@@ -1,0 +1,76 @@
+[0.032s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.156s] [35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[0.179s] [ 50%] Built target pub_current_node
+[0.190s] [ 75%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[3.016s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::motion_compensation()[m[K’:
+[3.016s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:165:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktau_imp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.016s]   165 |     double [01;35m[Ktau_imp[m[K = (Kp_[dxl_id-1] * (target_imp_pos_[dxl_id-1] -present_position_[dxl_id-1] )
+[3.016s]       |            [01;35m[K^~~~~~~[m[K
+[3.031s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.031s]                  from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[3.031s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[3.031s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:320:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_raw[m[K’ was not declared in this scope
+[3.031s]   320 |         [01;31m[Kcurrent_raw[m[K,
+[3.031s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[3.038s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:321:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity_raw[m[K’ was not declared in this scope
+[3.038s]   321 |         [01;31m[Kvelocity_raw[m[K,
+[3.038s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[3.044s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:322:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition_raw[m[K’ was not declared in this scope
+[3.044s]   322 |         [01;31m[Kposition_raw[m[K
+[3.045s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[3.047s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K At global scope:
+[3.047s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:480:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_msg[m[K’ does not name a type
+[3.047s]   480 |     [01;31m[Kleft_msg[m[K.data.assign(
+[3.047s]       |     [01;31m[K^~~~~~~~[m[K
+[3.048s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:486:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_msg[m[K’ does not name a type
+[3.048s]   486 |     [01;31m[Kright_msg[m[K.data.assign(
+[3.048s]       |     [01;31m[K^~~~~~~~~[m[K
+[3.052s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:491:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_openarm_command_publisher_[m[K’ does not name a type
+[3.052s]   491 |   [01;31m[Kleft_openarm_command_publisher_[m[K->publish(left_msg);
+[3.052s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.057s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:492:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_openarm_command_publisher_[m[K’ does not name a type
+[3.057s]   492 |   [01;31m[Kright_openarm_command_publisher_[m[K->publish(right_msg);
+[3.057s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.057s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:494:24:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[3.057s]   494 |   motion_compensation()[01;31m[K;[m[K
+[3.057s]       |                        [01;31m[K^[m[K
+[3.060s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:498:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kcycle_start[m[K’ was not declared in this scope
+[3.061s]   498 |   std::chrono::duration_cast<std::chrono::microseconds>(cycle_end - [01;31m[Kcycle_start[m[K).count();
+[3.061s]       |                                                                     [01;31m[K^~~~~~~~~~~[m[K
+[3.061s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.061s]                  from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[3.061s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:500:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[3.061s]   500 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[3.061s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.061s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:500:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[3.061s]   500 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[3.061s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.061s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:511:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.062s]   511 | [01;31m[K}[m[K
+[3.062s]       | [01;31m[K^[m[K
+[5.912s] [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:497:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcycle_us[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.912s]   497 |   const auto [01;35m[Kcycle_us[m[K =
+[5.912s]       |              [01;35m[K^~~~~~~~[m[K
+[5.953s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.953s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.953s] gmake: *** [Makefile:146: all] Error 2
+[5.956s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/home/tky/workspace/openarm_ws/install/openarm_bimanual_moveit_config:/home/tky/workspace/openarm_ws/install/openarm:/home/tky/workspace/openarm_ws/install/openarm_description:/home/tky/workspace/openarm_ws/install/openarm_bringup:/home/tky/workspace/openarm_ws/install/dynamixel_sdk_examples:/home/tky/workspace/openarm_ws/install/dxl_wt_openarm_leader:/home/tky/workspace/openarm_ws/install/dxl_openarm_leader:/opt/ros/humble /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

@@ -1,0 +1,68 @@
+[35m[1mConsolidate compiler generated dependencies of target read_write_wt_position_node[0m
+[ 50%] Built target pub_current_node
+[ 75%] [32mBuilding CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o[0m
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:[m[K In member function ‘[01m[Kvoid ReadWriteWTNode::read_present_position()[m[K’:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:251:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpresent_positon_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpresent_position_[m[K’?
+  251 |       [01;31m[Kpresent_positon_[m[K[id-1]= position_raw;
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kpresent_position_[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:289:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope; did you mean ‘[01m[Kid[m[K’?
+  289 |         openarm_msg.data[[01;31m[Ki[m[K] = joint_rad;
+      |                          [01;31m[K^[m[K
+      |                          [32m[Kid[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:293:11:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 7 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  293 |           [01;35m[K"DXL ID: %d Present: %d -> joint%zu: %.3f rad"[m[K,
+      |           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+......
+  296 |           [32m[Kjoint_n[m[K,
+      |           [32m[K~~~~~~~[m[K
+      |           [32m[K|[m[K
+      |           [32m[Kint[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:293:45:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  293 |           "DXL ID: %d Present: %d -> joint[01;36m[K%zu[m[K: %.3f rad",
+      |                                           [01;36m[K~~^[m[K
+      |                                             [01;36m[K|[m[K
+      |                                             [01;36m[Klong unsigned int[m[K
+      |                                           [32m[K%u[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:239:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_raw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  239 |       int16_t [01;35m[Kcurrent_raw[m[K = static_cast<int16_t>(
+      |               [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:243:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvelocity_raw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  243 |       int32_t [01;35m[Kvelocity_raw[m[K = static_cast<int32_t>(
+      |               [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45[m[K:
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:309:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_raw[m[K’ was not declared in this scope
+  309 |       [01;31m[Kcurrent_raw[m[K,
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:310:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity_raw[m[K’ was not declared in this scope
+  310 |       [01;31m[Kvelocity_raw[m[K,
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:311:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition_raw[m[K’ was not declared in this scope
+  311 |       [01;31m[Kposition_raw[m[K
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

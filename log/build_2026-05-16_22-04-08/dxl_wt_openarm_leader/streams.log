@@ -1,0 +1,112 @@
+[0.016s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.101s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.110s] [ 50%] Built target pub_current_node
+[0.116s] [ 75%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.577s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.577s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:251:7: error: ‘present_positon_’ was not declared in this scope; did you mean ‘present_position_’?
+[2.577s]   251 |       present_positon_[id-1]= position_raw;
+[2.577s]       |       ^~~~~~~~~~~~~~~~
+[2.577s]       |       present_position_
+[2.581s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:289:26: error: ‘i’ was not declared in this scope; did you mean ‘id’?
+[2.581s]   289 |         openarm_msg.data[i] = joint_rad;
+[2.581s]       |                          ^
+[2.581s]       |                          id
+[2.581s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.582s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.582s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.582s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.582s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.582s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.582s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:293:11: warning: format ‘%zu’ expects argument of type ‘size_t’, but argument 7 has type ‘int’ [-Wformat=]
+[2.582s]   293 |           "DXL ID: %d Present: %d -> joint%zu: %.3f rad",
+[2.582s]       |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.582s] ......
+[2.582s]   296 |           joint_n,
+[2.582s]       |           ~~~~~~~
+[2.582s]       |           |
+[2.582s]       |           int
+[2.582s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:293:45: note: format string is defined here
+[2.582s]   293 |           "DXL ID: %d Present: %d -> joint%zu: %.3f rad",
+[2.582s]       |                                           ~~^
+[2.582s]       |                                             |
+[2.582s]       |                                             long unsigned int
+[2.582s]       |                                           %u
+[2.582s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:239:15: warning: unused variable ‘current_raw’ [-Wunused-variable]
+[2.582s]   239 |       int16_t current_raw = static_cast<int16_t>(
+[2.583s]       |               ^~~~~~~~~~~
+[2.583s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:243:15: warning: unused variable ‘velocity_raw’ [-Wunused-variable]
+[2.583s]   243 |       int32_t velocity_raw = static_cast<int32_t>(
+[2.583s]       |               ^~~~~~~~~~~~
+[2.587s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.587s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.587s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.587s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:309:9: error: ‘current_raw’ was not declared in this scope
+[2.588s]   309 |         current_raw,
+[2.588s]       |         ^~~~~~~~~~~
+[2.593s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:310:9: error: ‘velocity_raw’ was not declared in this scope
+[2.593s]   310 |         velocity_raw,
+[2.593s]       |         ^~~~~~~~~~~~
+[2.600s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:311:9: error: ‘position_raw’ was not declared in this scope
+[2.600s]   311 |         position_raw
+[2.600s]       |         ^~~~~~~~~~~~
+[2.602s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: At global scope:
+[2.602s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:469:5: error: ‘left_msg’ does not name a type
+[2.602s]   469 |     left_msg.data.assign(
+[2.602s]       |     ^~~~~~~~
+[2.603s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:475:5: error: ‘right_msg’ does not name a type
+[2.603s]   475 |     right_msg.data.assign(
+[2.603s]       |     ^~~~~~~~~
+[2.607s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:480:3: error: ‘left_openarm_command_publisher_’ does not name a type
+[2.607s]   480 |   left_openarm_command_publisher_->publish(left_msg);
+[2.607s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.612s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:481:3: error: ‘right_openarm_command_publisher_’ does not name a type
+[2.612s]   481 |   right_openarm_command_publisher_->publish(right_msg);
+[2.612s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.612s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:483:24: error: expected constructor, destructor, or type conversion before ‘;’ token
+[2.612s]   483 |   motion_compensation();
+[2.612s]       |                        ^
+[2.616s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:487:69: error: ‘cycle_start’ was not declared in this scope
+[2.616s]   487 |   std::chrono::duration_cast<std::chrono::microseconds>(cycle_end - cycle_start).count();
+[2.616s]       |                                                                     ^~~~~~~~~~~
+[2.616s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.616s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.616s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.616s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:489:3: error: expected unqualified-id before ‘do’
+[2.617s]   489 |   RCLCPP_INFO_THROTTLE(
+[2.617s]       |   ^~~~~~~~~~~~~~~~~~~~
+[2.617s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:489:3: error: expected unqualified-id before ‘while’
+[2.617s]   489 |   RCLCPP_INFO_THROTTLE(
+[2.617s]       |   ^~~~~~~~~~~~~~~~~~~~
+[2.617s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:500:1: error: expected declaration before ‘}’ token
+[2.617s]   500 | }
+[2.617s]       | ^
+[5.143s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:486:14: warning: ‘cycle_us’ defined but not used [-Wunused-variable]
+[5.143s]   486 |   const auto cycle_us =
+[5.143s]       |              ^~~~~~~~
+[5.180s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[5.180s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[5.180s] gmake: *** [Makefile:146: all] Error 2
+[5.182s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12

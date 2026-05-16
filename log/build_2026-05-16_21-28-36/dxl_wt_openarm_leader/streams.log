@@ -1,0 +1,42 @@
+[0.025s] Invoking command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
+[0.127s] Consolidate compiler generated dependencies of target read_write_wt_position_node
+[0.144s] [ 50%] Built target pub_current_node
+[0.153s] [ 75%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[2.366s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+[2.366s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:237:13: warning: unused variable ‘current_raw’ [-Wunused-variable]
+[2.366s]   237 |     int16_t current_raw = static_cast<int16_t>(
+[2.366s]       |             ^~~~~~~~~~~
+[2.366s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:241:13: warning: unused variable ‘velocity_raw’ [-Wunused-variable]
+[2.366s]   241 |     int32_t velocity_raw = static_cast<int32_t>(
+[2.366s]       |             ^~~~~~~~~~~~
+[2.367s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:245:13: warning: unused variable ‘position_raw’ [-Wunused-variable]
+[2.367s]   245 |     int32_t position_raw = static_cast<int32_t>(
+[2.367s]       |             ^~~~~~~~~~~~
+[2.370s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.370s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.370s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.371s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.371s]                  from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+[2.371s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:255:3: error: ‘id’ was not declared in this scope
+[2.371s]   255 |   id,
+[2.371s]       |   ^~
+[2.376s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:256:3: error: ‘current_raw’ was not declared in this scope
+[2.376s]   256 |   current_raw,
+[2.376s]       |   ^~~~~~~~~~~
+[2.381s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:257:3: error: ‘velocity_raw’ was not declared in this scope
+[2.382s]   257 |   velocity_raw,
+[2.382s]       |   ^~~~~~~~~~~~
+[2.387s] /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:258:3: error: ‘position_raw’ was not declared in this scope
+[2.387s]   258 |   position_raw
+[2.387s]       |   ^~~~~~~~~~~~
+[4.988s] gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+[4.989s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+[4.989s] gmake: *** [Makefile:146: all] Error 2
+[4.990s] Invoked command in '/home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader' returned '2': AMENT_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces:/home/tky/workspace/openarm_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tky/workspace/openarm_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/tky/workspace/openarm_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/tky/.pyenv/shims/cmake --build /home/tky/workspace/openarm_ws/build/dxl_wt_openarm_leader -- -j12 -l12
