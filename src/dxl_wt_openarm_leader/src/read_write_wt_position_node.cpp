@@ -37,7 +37,7 @@
 #include <cmath>
 #include <vector>
 #include <algorithm>
-
+#include <chrono>
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
@@ -62,6 +62,9 @@
 #define ADDR_PRESENT_CURRENT			126	 // Represents "Present Load" in Rot motors
 #define ADDR_PRESENT_VELOCITY			128
 #define ADDR_PRESENT_POSITION			132
+//For Group fast sync read
+#define ADDR_PRESENT_STATUS      ADDR_PRESENT_CURRENT
+#define LEN_PRESENT_STATUS       10
 
 /* Motors ID */
 #define DXL1_ID                         1
@@ -195,6 +198,9 @@ void ReadWriteWTNode::motion_compensation()
 // 追加: timerから定期的に呼ばれてPresent Statusを読む関数
 void ReadWriteWTNode::read_present_position()
 {
+  //for time measurement
+  const auto cycle_start = std::chrono::steady_clock::now();
+
   std_msgs::msg::Float64MultiArray openarm_msg;
   openarm_msg.data.resize(14, 0.0);
 
@@ -365,6 +371,22 @@ void ReadWriteWTNode::read_present_position()
   right_openarm_command_publisher_->publish(right_msg);
 
   motion_compensation();
+
+  const auto cycle_end = std::chrono::steady_clock::now();
+  const auto cycle_us =
+  std::chrono::duration_cast<std::chrono::microseconds>(cycle_end - cycle_start).count();
+
+  RCLCPP_INFO_THROTTLE(
+    this->get_logger(),
+    *this->get_clock(),
+    1000,
+    "cycle time: %ld us (%.3f ms), target period: %d ms",
+    cycle_us,
+    static_cast<double>(cycle_us) / 1000.0,
+    read_period_ms_
+);
+
+
 }
 
 ReadWriteWTNode::ReadWriteWTNode()

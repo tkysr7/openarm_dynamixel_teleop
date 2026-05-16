@@ -1,0 +1,52 @@
+Consolidate compiler generated dependencies of target read_write_wt_position_node
+[ 25%] Building CXX object CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o
+[ 75%] Built target pub_current_node
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: In member function ‘void ReadWriteWTNode::read_present_position()’:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:202:14: warning: variable ‘cycle_start’ set but not used [-Wunused-but-set-variable]
+  202 |   const auto cycle_start = std::chrono::steady_clock::now();
+      |              ^~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp: At global scope:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:266:5: error: ‘left_msg’ does not name a type
+  266 |     left_msg.data.assign(
+      |     ^~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:272:5: error: ‘right_msg’ does not name a type
+  272 |     right_msg.data.assign(
+      |     ^~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:277:3: error: ‘left_openarm_command_publisher_’ does not name a type
+  277 |   left_openarm_command_publisher_->publish(left_msg);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:278:3: error: ‘right_openarm_command_publisher_’ does not name a type
+  278 |   right_openarm_command_publisher_->publish(right_msg);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:280:24: error: expected constructor, destructor, or type conversion before ‘;’ token
+  280 |   motion_compensation();
+      |                        ^
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:284:69: error: ‘cycle_start’ was not declared in this scope
+  284 |   std::chrono::duration_cast<std::chrono::microseconds>(cycle_end - cycle_start).count();
+      |                                                                     ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:45:
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:286:3: error: expected unqualified-id before ‘do’
+  286 |   RCLCPP_INFO_THROTTLE(
+      |   ^~~~~~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:286:3: error: expected unqualified-id before ‘while’
+  286 |   RCLCPP_INFO_THROTTLE(
+      |   ^~~~~~~~~~~~~~~~~~~~
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:297:1: error: expected declaration before ‘}’ token
+  297 | }
+      | ^
+/home/tky/workspace/openarm_ws/src/dxl_wt_openarm_leader/src/read_write_wt_position_node.cpp:283:14: warning: ‘cycle_us’ defined but not used [-Wunused-variable]
+  283 |   const auto cycle_us =
+      |              ^~~~~~~~
+gmake[2]: *** [CMakeFiles/read_write_wt_position_node.dir/build.make:76: CMakeFiles/read_write_wt_position_node.dir/src/read_write_wt_position_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/read_write_wt_position_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

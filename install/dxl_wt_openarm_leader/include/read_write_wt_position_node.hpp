@@ -66,6 +66,7 @@ private:
 
   // 追加: 一定周期で現在位置を読むためのtimer
   rclcpp::TimerBase::SharedPtr timer_;
+  std::unique_ptr<dynamixel::GroupFastSyncRead> group_fast_sync_read_;
 
   // int present_position;
 
